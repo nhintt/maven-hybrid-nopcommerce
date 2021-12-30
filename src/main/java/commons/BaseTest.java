@@ -41,7 +41,10 @@ public class BaseTest {
 			driver = new FirefoxDriver(options);
 		} else if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			File file = new File(GlobalContants.PROJECT_PATH + "/browserExtensions/ultra_surf.crx");
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(file);
+			driver = new ChromeDriver(options);
 		} else if (browserName.equals("h-chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();

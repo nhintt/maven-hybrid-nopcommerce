@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageUIs.nopCommerce.user.UserBasePageUI;
+
 public class BasePage {
 
 	public static BasePage getBasePageObject() {
@@ -477,6 +479,12 @@ public class BasePage {
 		}
 	}
 
+	// ------------- USER -------------------------
+	public void openPageByNamePage(WebDriver driver, String pageName) {
+		waitForElementVisible(driver, UserBasePageUI.URL_BY_PAGENAME, pageName);
+		clickToElement(driver, UserBasePageUI.URL_BY_PAGENAME, pageName);
+	}
+	
 	private WebDriverWait explicitWait;
 	private int longTimeout = 30;
 	private int shortTimeout = 5;

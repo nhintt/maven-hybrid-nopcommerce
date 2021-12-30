@@ -28,4 +28,8 @@ public class DataUtil {
 	public String getPassword() {
 		return faker.internet().password();
 	}
+	
+	public String getEmailAddress() {
+		return faker.internet().emailAddress();
+	}
 }

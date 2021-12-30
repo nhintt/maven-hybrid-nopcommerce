@@ -1,0 +1,64 @@
+[INFO ] [2021-12-30 18:03:58,913] --------------------- START delete file in folder ------------------
+[INFO ] [2021-12-30 18:03:58,914] -------------------- END delete file in folder ---------------------
+[INFO ] [2021-12-30 18:03:59,103] Pre-Condition: Open browser'chrome' with URL = 'https://demo.nopcommerce.com/'
+[INFO ] [2021-12-30 18:04:08,408] Register_01 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:09,572] Register_01 - Step 02: Click to Register button
+[INFO ] [2021-12-30 18:04:09,836] Register_01 - Step 03: Verify error message display at First Name textbox
+[INFO ] [2021-12-30 18:04:09,940]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:09,940] Register_01 - Step 04: Verify error message display at Last Name textbox
+[INFO ] [2021-12-30 18:04:10,046]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:10,046] Register_01 - Step 05: Verify error message display at Email textbox
+[INFO ] [2021-12-30 18:04:10,170]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:10,170] Register_01 - Step 06: Verify error message display at Password textbox
+[INFO ] [2021-12-30 18:04:10,274]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:10,274] Register_01 - Step 07: Verify error message display at Confirm Password textbox
+[INFO ] [2021-12-30 18:04:10,510]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:10,705] Register_02 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:11,400] Register_02 - Step 02: Input to Firstname textbox with value 'Abe'
+[INFO ] [2021-12-30 18:04:11,681] Register_02 - Step 03: Input to Lastname textbox with value 'Beier'
+[INFO ] [2021-12-30 18:04:11,892] Register_02 - Step 04: Input to Email textbox with value 'abc@abc!'
+[INFO ] [2021-12-30 18:04:12,100] Register_02 - Step 05: Input to Password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:12,548] Register_02 - Step 06: Input to Confirm password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:12,731] Register_02 - Step 07: Click to Register button
+[INFO ] [2021-12-30 18:04:12,858] Register_02 - Step 08: Verify error message display at Email textbox
+[INFO ] [2021-12-30 18:04:12,931]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:12,961] Register_03 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:14,249] Register_03 - Step 02: Input to Firstname textbox with value 'Abe'
+[INFO ] [2021-12-30 18:04:14,498] Register_03 - Step 03: Input to Lastname textbox with value 'Beier'
+[INFO ] [2021-12-30 18:04:14,849] Register_03 - Step 04: Input to Email textbox with value 'lamont.williamson@yahoo.com'
+[INFO ] [2021-12-30 18:04:15,310] Register_03 - Step 05: Input to Password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:15,580] Register_03 - Step 06: Input to Confirm password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:15,820] Register_03 - Step 07: Click to Register button
+[INFO ] [2021-12-30 18:04:16,956] Register_03 - Step 08: Verify successful message display
+[INFO ] [2021-12-30 18:04:17,043]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:17,043] Register_03 - Step 09: Click to Logout link
+[INFO ] [2021-12-30 18:04:18,286] Register_04 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:19,004] Register_04 - Step 02: Input to Firstname textbox with value 'Abe'
+[INFO ] [2021-12-30 18:04:19,376] Register_04 - Step 03: Input to Lastname textbox with value 'Beier'
+[INFO ] [2021-12-30 18:04:19,793] Register_04 - Step 04: Input to Email textbox with value 'lamont.williamson@yahoo.com'
+[INFO ] [2021-12-30 18:04:20,046] Register_04 - Step 05: Input to Password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:20,377] Register_04 - Step 06: Input to Confirm password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:20,708] Register_04 - Step 07: Click to Register button
+[INFO ] [2021-12-30 18:04:21,556] Register_04 - Step 08: Verify error message display
+[INFO ] [2021-12-30 18:04:21,759]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:21,773] Register_05 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:22,629] Register_05 - Step 02: Input to Firstname textbox with value 'Abe'
+[INFO ] [2021-12-30 18:04:23,026] Register_05 - Step 03: Input to Lastname textbox with value 'Beier'
+[INFO ] [2021-12-30 18:04:23,445] Register_05 - Step 04: Input to Email textbox with value 'lamont.williamson@yahoo.com'
+[INFO ] [2021-12-30 18:04:23,712] Register_05 - Step 05: Input to Password textbox with value '12345'
+[INFO ] [2021-12-30 18:04:23,998] Register_05 - Step 06: Input to Confirm password textbox with value '12345'
+[INFO ] [2021-12-30 18:04:24,372] Register_05 - Step 07: Click to Register button
+[INFO ] [2021-12-30 18:04:24,651] Register_05 - Step 08: Verify error message display at Password textbox
+[INFO ] [2021-12-30 18:04:24,740]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:24,746] Register_04 - Step 01: Open Register page
+[INFO ] [2021-12-30 18:04:25,509] Register_04 - Step 02: Input to Firstname textbox with value 'Abe'
+[INFO ] [2021-12-30 18:04:25,883] Register_04 - Step 03: Input to Lastname textbox with value 'Beier'
+[INFO ] [2021-12-30 18:04:26,293] Register_04 - Step 04: Input to Email textbox with value 'lamont.williamson@yahoo.com'
+[INFO ] [2021-12-30 18:04:26,539] Register_04 - Step 05: Input to Password textbox with value 'esfj3tazua1k8b8'
+[INFO ] [2021-12-30 18:04:26,838] Register_04 - Step 06: Input to Confirm password textbox with value '123456'
+[INFO ] [2021-12-30 18:04:27,240] Register_04 - Step 07: Click to Register button
+[INFO ] [2021-12-30 18:04:27,511] Register_04 - Step 08: Verify error message display at Confirm Password textbox
+[INFO ] [2021-12-30 18:04:27,680]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-12-30 18:04:27,690] Post-Condition: Close browser
+[INFO ] [2021-12-30 18:04:27,691] OS name = windows 10
+[INFO ] [2021-12-30 18:04:27,691] Driver instance name = chromedriver: chrome on windows (af032e17ee09888690bef1a7d7f52245)
