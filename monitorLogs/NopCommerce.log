@@ -272,3 +272,383 @@
 [INFO ] [2021-12-30 18:04:27,690] Post-Condition: Close browser
 [INFO ] [2021-12-30 18:04:27,691] OS name = windows 10
 [INFO ] [2021-12-30 18:04:27,691] Driver instance name = chromedriver: chrome on windows (af032e17ee09888690bef1a7d7f52245)
+[INFO ] [2022-01-01 17:03:20,181] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:03:20,183] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:03:20,331] Pre-Condition: Open browser'chrome' with URL = 'https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:03:29,301] Register_01 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:30,790] Register_01 - Step 02: Click to Register button
+[INFO ] [2022-01-01 17:03:30,926] Register_01 - Step 03: Verify error message display at First Name textbox
+[INFO ] [2022-01-01 17:03:30,979]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:30,979] Register_01 - Step 04: Verify error message display at Last Name textbox
+[INFO ] [2022-01-01 17:03:31,055]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:31,056] Register_01 - Step 05: Verify error message display at Email textbox
+[INFO ] [2022-01-01 17:03:31,115]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:31,116] Register_01 - Step 06: Verify error message display at Password textbox
+[INFO ] [2022-01-01 17:03:31,209]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:31,209] Register_01 - Step 07: Verify error message display at Confirm Password textbox
+[INFO ] [2022-01-01 17:03:31,268]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:31,405] Register_02 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:32,451] Register_02 - Step 02: Input to Firstname textbox with value 'Mickey'
+[INFO ] [2022-01-01 17:03:32,577] Register_02 - Step 03: Input to Lastname textbox with value 'Harris'
+[INFO ] [2022-01-01 17:03:32,735] Register_02 - Step 04: Input to Email textbox with value 'abc@abc!'
+[INFO ] [2022-01-01 17:03:32,881] Register_02 - Step 05: Input to Password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:33,009] Register_02 - Step 06: Input to Confirm password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:33,140] Register_02 - Step 07: Click to Register button
+[INFO ] [2022-01-01 17:03:33,246] Register_02 - Step 08: Verify error message display at Email textbox
+[INFO ] [2022-01-01 17:03:33,296]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:33,308] Register_03 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:33,930] Register_03 - Step 02: Input to Firstname textbox with value 'Mickey'
+[INFO ] [2022-01-01 17:03:34,055] Register_03 - Step 03: Input to Lastname textbox with value 'Harris'
+[INFO ] [2022-01-01 17:03:34,184] Register_03 - Step 04: Input to Email textbox with value 'trinidad.reichel@hotmail.com'
+[INFO ] [2022-01-01 17:03:34,314] Register_03 - Step 05: Input to Password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:34,430] Register_03 - Step 06: Input to Confirm password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:34,563] Register_03 - Step 07: Click to Register button
+[INFO ] [2022-01-01 17:03:36,483] Register_03 - Step 08: Verify successful message display
+[INFO ] [2022-01-01 17:03:36,566]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:36,567] Register_03 - Step 09: Click to Logout link
+[INFO ] [2022-01-01 17:03:37,522] Register_04 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:38,094] Register_04 - Step 02: Input to Firstname textbox with value 'Mickey'
+[INFO ] [2022-01-01 17:03:38,214] Register_04 - Step 03: Input to Lastname textbox with value 'Harris'
+[INFO ] [2022-01-01 17:03:38,334] Register_04 - Step 04: Input to Email textbox with value 'trinidad.reichel@hotmail.com'
+[INFO ] [2022-01-01 17:03:38,472] Register_04 - Step 05: Input to Password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:38,597] Register_04 - Step 06: Input to Confirm password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:38,729] Register_04 - Step 07: Click to Register button
+[INFO ] [2022-01-01 17:03:39,345] Register_04 - Step 08: Verify error message display
+[INFO ] [2022-01-01 17:03:39,406]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:39,409] Register_05 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:39,945] Register_05 - Step 02: Input to Firstname textbox with value 'Mickey'
+[INFO ] [2022-01-01 17:03:40,066] Register_05 - Step 03: Input to Lastname textbox with value 'Harris'
+[INFO ] [2022-01-01 17:03:40,187] Register_05 - Step 04: Input to Email textbox with value 'trinidad.reichel@hotmail.com'
+[INFO ] [2022-01-01 17:03:40,320] Register_05 - Step 05: Input to Password textbox with value '12345'
+[INFO ] [2022-01-01 17:03:40,455] Register_05 - Step 06: Input to Confirm password textbox with value '12345'
+[INFO ] [2022-01-01 17:03:40,575] Register_05 - Step 07: Click to Register button
+[INFO ] [2022-01-01 17:03:40,672] Register_05 - Step 08: Verify error message display at Password textbox
+[INFO ] [2022-01-01 17:03:40,727]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:40,730] Register_04 - Step 01: Open Register page
+[INFO ] [2022-01-01 17:03:41,502] Register_04 - Step 02: Input to Firstname textbox with value 'Mickey'
+[INFO ] [2022-01-01 17:03:41,644] Register_04 - Step 03: Input to Lastname textbox with value 'Harris'
+[INFO ] [2022-01-01 17:03:41,782] Register_04 - Step 04: Input to Email textbox with value 'trinidad.reichel@hotmail.com'
+[INFO ] [2022-01-01 17:03:41,939] Register_04 - Step 05: Input to Password textbox with value 'bahl7ki2hqalqg'
+[INFO ] [2022-01-01 17:03:42,083] Register_04 - Step 06: Input to Confirm password textbox with value '123456'
+[INFO ] [2022-01-01 17:03:42,214] Register_04 - Step 07: Click to Register button
+[INFO ] [2022-01-01 17:03:42,314] Register_04 - Step 08: Verify error message display at Confirm Password textbox
+[INFO ] [2022-01-01 17:03:42,395]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:03:42,398] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:03:42,398] OS name = windows 10
+[INFO ] [2022-01-01 17:03:42,399] Driver instance name = chromedriver: chrome on windows (33c38dbae40e797c14cd12902ae238a6)
+[INFO ] [2022-01-01 17:05:49,532] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:05:49,534] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:05:49,949] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:05:57,825] Pre-Condition - Step 02: Open Rgister page
+[INFO ] [2022-01-01 17:07:51,208] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:07:51,209] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:07:51,851] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:07:59,269] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:08:00,260] Pre-Condition - Step 03: Input to Firstname textbox with value 'Florine'
+[INFO ] [2022-01-01 17:09:11,734] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:09:11,735] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:09:12,113] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:09:19,431] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:09:20,901] Pre-Condition - Step 03: Input to Firstname textbox with value 'Billy'
+[INFO ] [2022-01-01 17:09:21,038] Pre-Condition - Step 04: Input to Lastname textbox with value 'Ryan'
+[INFO ] [2022-01-01 17:09:21,156] Pre-Condition - Step 05: Input to Email textbox with value 'jayson.reilly@gmail.com'
+[INFO ] [2022-01-01 17:09:21,296] Pre-Condition - Step 06: Input to Password textbox with value 'n8zz7dfn'
+[INFO ] [2022-01-01 17:09:21,438] Pre-Condition - Step 07: Input to Confirm password textbox with value 'n8zz7dfn'
+[INFO ] [2022-01-01 17:09:21,610] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:09:22,599] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:09:22,666]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:09:22,669] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:09:23,649] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:09:24,193] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:09:24,278] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:09:24,340]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:09:24,433] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:09:24,954] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:09:25,070] Login_02 - Step 03: Input to Password textbox with value 'n8zz7dfn'
+[INFO ] [2022-01-01 17:09:25,200] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:09:25,304] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:09:25,383]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:09:25,394] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:09:26,196] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:09:26,336] Login_03 - Step 03: Input to Password textbox with value 'n8zz7dfn'
+[INFO ] [2022-01-01 17:09:26,461] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:09:27,054] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:09:57,809] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:09:58,612] Login_04 - Step 02: Input to Email textbox with value 'jayson.reilly@gmail.com'
+[INFO ] [2022-01-01 17:10:38,562] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:11:02,736] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:11:27,045] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:11:27,046] OS name = windows 10
+[INFO ] [2022-01-01 17:11:27,047] Driver instance name = chromedriver: chrome on windows (398fec4d66c75c6ddd720b57e1df3799)
+[INFO ] [2022-01-01 17:11:39,239] chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHI-PC', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 398fec4d66c75c6ddd720b57e1df3799
+[INFO ] [2022-01-01 17:11:40,115] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:11:40,118] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:11:40,577] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:11:47,820] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:12:01,779] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:12:01,780] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:12:02,417] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:12:12,794] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:12:14,006] Pre-Condition - Step 03: Input to Firstname textbox with value 'Freeman'
+[INFO ] [2022-01-01 17:12:14,273] Pre-Condition - Step 04: Input to Lastname textbox with value 'Shanahan'
+[INFO ] [2022-01-01 17:12:14,559] Pre-Condition - Step 05: Input to Email textbox with value 'oliver.padberg@hotmail.com'
+[INFO ] [2022-01-01 17:12:14,837] Pre-Condition - Step 06: Input to Password textbox with value 'tymrpxqlnqvd'
+[INFO ] [2022-01-01 17:12:15,101] Pre-Condition - Step 07: Input to Confirm password textbox with value 'tymrpxqlnqvd'
+[INFO ] [2022-01-01 17:12:15,422] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:12:17,165] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:12:17,270]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:12:17,275] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:12:19,837] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:12:21,097] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:12:21,323] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:12:21,464]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:12:21,751] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:12:22,578] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:12:23,122] Login_02 - Step 03: Input to Password textbox with value 'tymrpxqlnqvd'
+[INFO ] [2022-01-01 17:12:23,426] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:12:23,596] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:12:23,709]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:12:23,737] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:12:25,012] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:12:25,398] Login_03 - Step 03: Input to Password textbox with value 'tymrpxqlnqvd'
+[INFO ] [2022-01-01 17:12:25,775] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:12:26,559] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:12:57,655] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:12:58,510] Login_04 - Step 02: Input to Email textbox with value 'oliver.padberg@hotmail.com'
+[INFO ] [2022-01-01 17:12:58,749] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-01 17:12:59,430] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-01 17:13:30,564] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:13:31,475] Login_05 - Step 02: Input to Email textbox with value 'oliver.padberg@hotmail.com'
+[INFO ] [2022-01-01 17:13:31,712] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-01 17:13:31,902] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:13:32,919] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:14:03,863] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:14:04,632] Login_06 - Step 02: Input to Email textbox with value 'oliver.padberg@hotmail.com'
+[INFO ] [2022-01-01 17:14:04,996] Login_06 - Step 03: Input to Password textbox with value 'tymrpxqlnqvd'
+[INFO ] [2022-01-01 17:14:05,336] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:14:07,450] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:14:08,143] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:14:08,144] OS name = windows 10
+[INFO ] [2022-01-01 17:14:08,144] Driver instance name = chromedriver: chrome on windows (71f357280d001ea40cc23c112145aa6e)
+[INFO ] [2022-01-01 17:16:26,079] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:16:26,081] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:16:26,608] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:16:36,450] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:16:37,561] Pre-Condition - Step 03: Input to Firstname textbox with value 'Allyson'
+[INFO ] [2022-01-01 17:16:37,828] Pre-Condition - Step 04: Input to Lastname textbox with value 'Conroy'
+[INFO ] [2022-01-01 17:16:38,096] Pre-Condition - Step 05: Input to Email textbox with value 'quyen.mertz@yahoo.com'
+[INFO ] [2022-01-01 17:16:38,318] Pre-Condition - Step 06: Input to Password textbox with value 'rrpgrw15px2'
+[INFO ] [2022-01-01 17:16:38,607] Pre-Condition - Step 07: Input to Confirm password textbox with value 'rrpgrw15px2'
+[INFO ] [2022-01-01 17:16:38,884] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:16:40,083] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:16:40,166]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:16:40,169] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:16:41,510] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:42,179] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:16:42,377] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:16:42,496]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:16:42,735] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:43,450] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:16:43,652] Login_02 - Step 03: Input to Password textbox with value 'rrpgrw15px2'
+[INFO ] [2022-01-01 17:16:43,845] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:16:44,081] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:16:44,221]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:16:44,261] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:44,955] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:16:45,171] Login_03 - Step 03: Input to Password textbox with value 'rrpgrw15px2'
+[INFO ] [2022-01-01 17:16:45,530] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:16:46,352] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:16:46,454]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:16:46,461] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:47,300] Login_04 - Step 02: Input to Email textbox with value 'quyen.mertz@yahoo.com'
+[INFO ] [2022-01-01 17:16:47,716] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-01 17:16:48,444] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-01 17:16:48,565]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:16:48,576] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:49,443] Login_05 - Step 02: Input to Email textbox with value 'quyen.mertz@yahoo.com'
+[INFO ] [2022-01-01 17:16:49,865] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-01 17:16:50,245] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:16:51,047] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:16:51,166]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-01-01 17:16:51,423] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:16:52,137] Login_06 - Step 02: Input to Email textbox with value 'quyen.mertz@yahoo.com'
+[INFO ] [2022-01-01 17:16:52,564] Login_06 - Step 03: Input to Password textbox with value 'rrpgrw15px2'
+[INFO ] [2022-01-01 17:16:52,829] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:16:54,208] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:16:54,990] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:16:54,990] OS name = windows 10
+[INFO ] [2022-01-01 17:16:54,991] Driver instance name = chromedriver: chrome on windows (8d143d0b001cdca87b62861cd96d7c8c)
+[INFO ] [2022-01-01 17:20:48,377] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:20:48,379] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:21:07,725] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:21:07,726] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:21:08,236] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:21:16,945] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:21:18,705] Pre-Condition - Step 03: Input to Firstname textbox with value 'Dian'
+[INFO ] [2022-01-01 17:21:18,906] Pre-Condition - Step 04: Input to Lastname textbox with value 'Veum'
+[INFO ] [2022-01-01 17:21:19,114] Pre-Condition - Step 05: Input to Email textbox with value 'isabella.schamberger@gmail.com'
+[INFO ] [2022-01-01 17:21:19,364] Pre-Condition - Step 06: Input to Password textbox with value 'h6yyvvt96q7us9'
+[INFO ] [2022-01-01 17:21:19,654] Pre-Condition - Step 07: Input to Confirm password textbox with value 'h6yyvvt96q7us9'
+[INFO ] [2022-01-01 17:21:19,869] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:21:21,317] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:21:21,451]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:21,457] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:21:22,893] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:23,693] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:21:23,941] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:21:24,081]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:24,364] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:25,034] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:21:25,247] Login_02 - Step 03: Input to Password textbox with value 'h6yyvvt96q7us9'
+[INFO ] [2022-01-01 17:21:25,490] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:21:25,680] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:21:25,780]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:25,810] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:27,266] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:21:27,614] Login_03 - Step 03: Input to Password textbox with value 'h6yyvvt96q7us9'
+[INFO ] [2022-01-01 17:21:27,948] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:21:28,936] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:21:29,068]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:29,086] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:29,831] Login_04 - Step 02: Input to Email textbox with value 'isabella.schamberger@gmail.com'
+[INFO ] [2022-01-01 17:21:30,165] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-01 17:21:30,925] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-01 17:21:31,043]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:31,053] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:31,730] Login_05 - Step 02: Input to Email textbox with value 'isabella.schamberger@gmail.com'
+[INFO ] [2022-01-01 17:21:31,961] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-01 17:21:32,169] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:21:32,935] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:21:33,045]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:21:33,053] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:21:33,880] Login_06 - Step 02: Input to Email textbox with value 'isabella.schamberger@gmail.com'
+[INFO ] [2022-01-01 17:21:34,229] Login_06 - Step 03: Input to Password textbox with value 'h6yyvvt96q7us9'
+[INFO ] [2022-01-01 17:21:34,648] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:21:35,924] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:21:36,902] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:21:36,902] OS name = windows 10
+[INFO ] [2022-01-01 17:21:36,902] Driver instance name = chromedriver: chrome on windows (e50b7e71fa8dbefeb0b02cf49310596c)
+[INFO ] [2022-01-01 17:24:16,751] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:24:16,753] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:24:17,267] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:24:26,478] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:24:28,300] Pre-Condition - Step 03: Input to Firstname textbox with value 'Adrianne'
+[INFO ] [2022-01-01 17:24:28,526] Pre-Condition - Step 04: Input to Lastname textbox with value 'Jacobson'
+[INFO ] [2022-01-01 17:24:28,819] Pre-Condition - Step 05: Input to Email textbox with value 'bart.weissnat@gmail.com'
+[INFO ] [2022-01-01 17:24:29,040] Pre-Condition - Step 06: Input to Password textbox with value 'e8b3phl4'
+[INFO ] [2022-01-01 17:24:29,231] Pre-Condition - Step 07: Input to Confirm password textbox with value 'e8b3phl4'
+[INFO ] [2022-01-01 17:24:29,478] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:24:30,820] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:24:30,913]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:30,916] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:24:32,396] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:33,123] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:24:33,383] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:24:33,544]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:33,825] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:34,486] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:24:34,726] Login_02 - Step 03: Input to Password textbox with value 'e8b3phl4'
+[INFO ] [2022-01-01 17:24:35,087] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:24:35,335] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:24:35,411]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:35,448] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:36,148] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:24:36,472] Login_03 - Step 03: Input to Password textbox with value 'e8b3phl4'
+[INFO ] [2022-01-01 17:24:36,763] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:24:37,490] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:24:37,620]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:37,632] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:38,614] Login_04 - Step 02: Input to Email textbox with value 'bart.weissnat@gmail.com'
+[INFO ] [2022-01-01 17:24:38,908] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-01 17:24:39,717] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-01 17:24:39,843]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:39,859] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:40,653] Login_05 - Step 02: Input to Email textbox with value 'bart.weissnat@gmail.com'
+[INFO ] [2022-01-01 17:24:40,957] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-01 17:24:41,177] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:24:41,924] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:24:42,057]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:24:42,073] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:24:42,924] Login_06 - Step 02: Input to Email textbox with value 'bart.weissnat@gmail.com'
+[INFO ] [2022-01-01 17:24:43,259] Login_06 - Step 03: Input to Password textbox with value 'e8b3phl4'
+[INFO ] [2022-01-01 17:24:43,608] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:24:44,908] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:24:45,432] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:24:45,432] OS name = windows 10
+[INFO ] [2022-01-01 17:24:45,432] Driver instance name = chromedriver: chrome on windows (d9fc467759b5ab0a35c0dbd75a03c2ea)
+[INFO ] [2022-01-01 17:28:18,538] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:28:18,540] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:28:19,036] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:28:27,480] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:28:28,746] Pre-Condition - Step 03: Input to Firstname textbox with value 'Leif'
+[INFO ] [2022-01-01 17:28:29,031] Pre-Condition - Step 04: Input to Lastname textbox with value 'Huel'
+[INFO ] [2022-01-01 17:28:29,352] Pre-Condition - Step 05: Input to Email textbox with value 'ai.bahringer@hotmail.com'
+[INFO ] [2022-01-01 17:28:29,822] Pre-Condition - Step 06: Input to Password textbox with value 'xycyxi1km5u'
+[INFO ] [2022-01-01 17:28:30,072] Pre-Condition - Step 07: Input to Confirm password textbox with value 'xycyxi1km5u'
+[INFO ] [2022-01-01 17:28:30,268] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:28:31,539] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:28:31,634]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:28:31,637] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:28:32,901] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:28:33,766] Login_06 - Step 02: Input to Email textbox with value 'ai.bahringer@hotmail.com'
+[INFO ] [2022-01-01 17:28:34,177] Login_06 - Step 03: Input to Password textbox with value 'xycyxi1km5u'
+[INFO ] [2022-01-01 17:28:34,394] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:28:35,553] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:28:36,409] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:28:36,409] OS name = windows 10
+[INFO ] [2022-01-01 17:28:36,410] Driver instance name = chromedriver: chrome on windows (5d0801670cf68bd94fb051fa094786e4)
+[INFO ] [2022-01-01 17:37:01,088] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-01 17:37:01,089] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-01 17:37:01,601] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-01 17:37:12,552] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-01 17:37:14,388] Pre-Condition - Step 03: Input to Firstname textbox with value 'Dolores'
+[INFO ] [2022-01-01 17:37:14,638] Pre-Condition - Step 04: Input to Lastname textbox with value 'Gleason'
+[INFO ] [2022-01-01 17:37:15,020] Pre-Condition - Step 05: Input to Email textbox with value 'jamee.littel@hotmail.com'
+[INFO ] [2022-01-01 17:37:15,304] Pre-Condition - Step 06: Input to Password textbox with value '34cai964btjw'
+[INFO ] [2022-01-01 17:37:15,546] Pre-Condition - Step 07: Input to Confirm password textbox with value '34cai964btjw'
+[INFO ] [2022-01-01 17:37:15,854] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-01 17:37:17,176] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-01 17:37:17,272]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:17,275] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-01 17:37:18,995] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:20,459] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-01 17:37:20,738] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:37:20,905]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:21,323] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:22,102] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-01 17:37:22,384] Login_02 - Step 03: Input to Password textbox with value '34cai964btjw'
+[INFO ] [2022-01-01 17:37:22,671] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:37:22,897] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-01 17:37:23,010]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:23,041] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:23,803] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-01 17:37:24,239] Login_03 - Step 03: Input to Password textbox with value '34cai964btjw'
+[INFO ] [2022-01-01 17:37:24,602] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:37:25,343] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:37:25,494]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:25,506] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:26,364] Login_04 - Step 02: Input to Email textbox with value 'jamee.littel@hotmail.com'
+[INFO ] [2022-01-01 17:37:26,794] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-01 17:37:27,656] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-01 17:37:27,774]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:27,779] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:28,552] Login_05 - Step 02: Input to Email textbox with value 'jamee.littel@hotmail.com'
+[INFO ] [2022-01-01 17:37:28,972] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-01 17:37:29,375] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:37:30,101] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-01 17:37:30,254]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:30,264] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-01 17:37:31,104] Login_06 - Step 02: Input to Email textbox with value 'jamee.littel@hotmail.com'
+[INFO ] [2022-01-01 17:37:31,316] Login_06 - Step 03: Input to Password textbox with value '34cai964btjw'
+[INFO ] [2022-01-01 17:37:31,653] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-01 17:37:33,486] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-01 17:37:33,620]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-01 17:37:33,625] Post-Condition: Close browser
+[INFO ] [2022-01-01 17:37:33,625] OS name = windows 10
+[INFO ] [2022-01-01 17:37:33,625] Driver instance name = chromedriver: chrome on windows (6b32d973464beec569f017cf0afd78ad)
