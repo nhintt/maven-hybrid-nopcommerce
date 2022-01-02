@@ -32,4 +32,20 @@ public class DataUtil {
 	public String getEmailAddress() {
 		return faker.internet().emailAddress();
 	}
+	
+	public String getAddress() {
+		return faker.address().buildingNumber() + faker.address().streetName();
+	}
+	
+	public String getCityName() {
+		return faker.address().cityName();
+	}
+	
+	public String getZipcode() {
+		return faker.address().zipCode();
+	}
+	
+	public String getPhoneNumber() {
+		return faker.phoneNumber().cellPhone();
+	}
 }

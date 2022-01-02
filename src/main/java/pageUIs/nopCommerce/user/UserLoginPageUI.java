@@ -6,5 +6,4 @@ public class UserLoginPageUI {
 	public static final String LOGIN_ERROR_MSG = "//div[contains(@class, 'message-error')]";
 	
 	// DYNAMIC LOCATOR
-	public static final String TEXTBOX_BY_ID = "//input[@id='%s']";
 }

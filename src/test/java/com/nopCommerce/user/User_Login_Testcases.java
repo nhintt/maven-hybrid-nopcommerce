@@ -39,19 +39,19 @@ public class User_Login_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Pre-Condition - Step 03: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Pre-Condition - Step 04: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Pre-Condition - Step 05: Input to Email textbox with value '" + emailAddress + "'");
-		userRegisterPage.inputToTextboxByID("Email", emailAddress);
+		userRegisterPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Pre-Condition - Step 06: Input to Password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("Password", password);
+		userRegisterPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Pre-Condition - Step 07: Input to Confirm password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", password);
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", password);
 		
 		log.info("Pre-Condition - Step 08: Click to Register button");
 		userRegisterPage.clickToRegisterButton();
@@ -84,10 +84,10 @@ public class User_Login_Testcases extends BaseTest {
 		userLoginPage = PageGeneratorManager.getUserLoginPage(driver);
 		
 		log.info("Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'");
-		userLoginPage.inputToTextboxByID("Email", "abc@abc@!#$");
+		userLoginPage.inputToTextboxByID(null, "Email", "abc@abc@!#$");
 		
 		log.info("Login_02 - Step 03: Input to Password textbox with value '" + password + "'");
-		userLoginPage.inputToTextboxByID("Password", password);
+		userLoginPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Login_02 - Step 04: Click to Login button");
 		userLoginPage.clickToLoginButton();
@@ -103,10 +103,10 @@ public class User_Login_Testcases extends BaseTest {
 		userLoginPage = PageGeneratorManager.getUserLoginPage(driver);
 		
 		log.info("Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'");
-		userLoginPage.inputToTextboxByID("Email", "automation@mail.vn");
+		userLoginPage.inputToTextboxByID(null, "Email", "automation@mail.vn");
 		
 		log.info("Login_03 - Step 03: Input to Password textbox with value '" + password + "'");
-		userLoginPage.inputToTextboxByID("Password", password);
+		userLoginPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Login_03 - Step 04: Click to Login button");
 		userLoginPage.clickToLoginButton();
@@ -122,7 +122,7 @@ public class User_Login_Testcases extends BaseTest {
 		userLoginPage = PageGeneratorManager.getUserLoginPage(driver);
 		
 		log.info("Login_04 - Step 02: Input to Email textbox with value '" + emailAddress + "'");
-		userLoginPage.inputToTextboxByID("Email", emailAddress);
+		userLoginPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Login_04 - Step 03: Click to Login button");
 		userLoginPage.clickToLoginButton();
@@ -138,10 +138,10 @@ public class User_Login_Testcases extends BaseTest {
 		userLoginPage = PageGeneratorManager.getUserLoginPage(driver);
 		
 		log.info("Login_05 - Step 02: Input to Email textbox with value '" + emailAddress + "'");
-		userLoginPage.inputToTextboxByID("Email", emailAddress);
+		userLoginPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Login_05 - Step 03: Input to Password textbox with value '123456'");
-		userLoginPage.inputToTextboxByID("Password", "123456");
+		userLoginPage.inputToTextboxByID(null, "Password", "123456");
 		
 		log.info("Login_05 - Step 04: Click to Login button");
 		userLoginPage.clickToLoginButton();
@@ -157,10 +157,10 @@ public class User_Login_Testcases extends BaseTest {
 		userLoginPage = PageGeneratorManager.getUserLoginPage(driver);
 		
 		log.info("Login_06 - Step 02: Input to Email textbox with value '" + emailAddress + "'");
-		userLoginPage.inputToTextboxByID("Email", emailAddress);
+		userLoginPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Login_06 - Step 03: Input to Password textbox with value '" + password + "'");
-		userLoginPage.inputToTextboxByID("Password", password);
+		userLoginPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Login_06 - Step 04: Click to Login button");
 		userDashboardPage = userLoginPage.clickToLoginButton();

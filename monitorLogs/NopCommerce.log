@@ -652,3 +652,665 @@ Session ID: 398fec4d66c75c6ddd720b57e1df3799
 [INFO ] [2022-01-01 17:37:33,625] Post-Condition: Close browser
 [INFO ] [2022-01-01 17:37:33,625] OS name = windows 10
 [INFO ] [2022-01-01 17:37:33,625] Driver instance name = chromedriver: chrome on windows (6b32d973464beec569f017cf0afd78ad)
+[INFO ] [2022-01-02 12:00:06,519] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 12:00:06,521] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 12:00:06,921] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 12:00:15,625] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 12:00:17,055] Pre-Condition - Step 03: Input to Firstname textbox with value 'Tanya'
+[INFO ] [2022-01-02 12:00:17,182] Pre-Condition - Step 04: Input to Lastname textbox with value 'Johnson'
+[INFO ] [2022-01-02 12:00:17,325] Pre-Condition - Step 05: Input to Email textbox with value 'doyle.ratke@hotmail.com'
+[INFO ] [2022-01-02 12:00:17,472] Pre-Condition - Step 06: Input to Password textbox with value 'dgrf6dk30ogejv3'
+[INFO ] [2022-01-02 12:00:17,637] Pre-Condition - Step 07: Input to Confirm password textbox with value 'dgrf6dk30ogejv3'
+[INFO ] [2022-01-02 12:00:17,777] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 12:00:19,070] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 12:00:19,139]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:19,141] Pre-Condition - Step 10: Click to Logout link
+[INFO ] [2022-01-02 12:00:20,287] Login_01 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:20,814] Login_01 - Step 02: Click to Login button
+[INFO ] [2022-01-02 12:00:20,899] Login_01 - Step 03: Verify error message displayed at Email textbox
+[INFO ] [2022-01-02 12:00:20,963]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:21,102] Login_02 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:21,683] Login_02 - Step 02: Input to Email textbox with value 'abc@abc@!#$'
+[INFO ] [2022-01-02 12:00:21,792] Login_02 - Step 03: Input to Password textbox with value 'dgrf6dk30ogejv3'
+[INFO ] [2022-01-02 12:00:21,933] Login_02 - Step 04: Click to Login button
+[INFO ] [2022-01-02 12:00:22,077] Login_02 - Step 05: Verify error message displayed at Email textbox
+[INFO ] [2022-01-02 12:00:22,138]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:22,155] Login_03 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:22,909] Login_03 - Step 02: Input to Email textbox with value 'automation@mail.vn'
+[INFO ] [2022-01-02 12:00:23,032] Login_03 - Step 03: Input to Password textbox with value 'dgrf6dk30ogejv3'
+[INFO ] [2022-01-02 12:00:23,160] Login_03 - Step 04: Click to Login button
+[INFO ] [2022-01-02 12:00:23,918] Login_03 - Step 05: Verify error message displayed
+[INFO ] [2022-01-02 12:00:23,975]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:23,979] Login_04 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:24,486] Login_04 - Step 02: Input to Email textbox with value 'doyle.ratke@hotmail.com'
+[INFO ] [2022-01-02 12:00:24,618] Login_04 - Step 03: Click to Login button
+[INFO ] [2022-01-02 12:00:25,543] Login_04 - Step 04: Verify error message displayed
+[INFO ] [2022-01-02 12:00:25,602]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:25,607] Login_05 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:26,103] Login_05 - Step 02: Input to Email textbox with value 'doyle.ratke@hotmail.com'
+[INFO ] [2022-01-02 12:00:26,239] Login_05 - Step 03: Input to Password textbox with value '123456'
+[INFO ] [2022-01-02 12:00:26,354] Login_05 - Step 04: Click to Login button
+[INFO ] [2022-01-02 12:00:26,873] Login_05 - Step 05: Verify error message displayed
+[INFO ] [2022-01-02 12:00:26,933]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:26,935] Login_06 - Step 01: Open Login page
+[INFO ] [2022-01-02 12:00:27,433] Login_06 - Step 02: Input to Email textbox with value 'doyle.ratke@hotmail.com'
+[INFO ] [2022-01-02 12:00:27,543] Login_06 - Step 03: Input to Password textbox with value 'dgrf6dk30ogejv3'
+[INFO ] [2022-01-02 12:00:27,658] Login_06 - Step 04: Click to Login button
+[INFO ] [2022-01-02 12:00:28,868] Login_06 - Step 05: Verify My account link displayed
+[INFO ] [2022-01-02 12:00:28,937]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:00:28,939] Post-Condition: Close browser
+[INFO ] [2022-01-02 12:00:28,939] OS name = windows 10
+[INFO ] [2022-01-02 12:00:28,940] Driver instance name = chromedriver: chrome on windows (7c4b4e00c32d3e2f9bfe61686e179a69)
+[INFO ] [2022-01-02 12:01:20,006] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 12:01:20,007] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 12:01:20,400] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 12:01:27,885] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 12:01:28,893] Pre-Condition - Step 03: Input to Firstname textbox with value 'Shane'
+[INFO ] [2022-01-02 12:01:29,030] Pre-Condition - Step 04: Input to Lastname textbox with value 'Jenkins'
+[INFO ] [2022-01-02 12:01:29,173] Pre-Condition - Step 05: Input to Email textbox with value 'laure.ritchie@gmail.com'
+[INFO ] [2022-01-02 12:01:29,318] Pre-Condition - Step 06: Input to Password textbox with value 'p0ho0huqs1'
+[INFO ] [2022-01-02 12:01:29,442] Pre-Condition - Step 07: Input to Confirm password textbox with value 'p0ho0huqs1'
+[INFO ] [2022-01-02 12:01:29,561] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 12:01:30,524] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 12:01:30,582]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:01:30,657] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 12:01:31,167] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 12:01:31,272] My_Account_01 - Step 03: Input to First name textbox with value 'Kelvin'
+[INFO ] [2022-01-02 12:01:31,404] My_Account_01 - Step 04: Input to Last name textbox with value 'Fritsch'
+[INFO ] [2022-01-02 12:01:31,543] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 12:01:31,675] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 02: Input to First name textbox
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 03: Input to Last name textbox
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 04: Input to Company textbox
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:01:47,085] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:01:47,086] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:01:47,101] Post-Condition: Close browser
+[INFO ] [2022-01-02 12:01:47,101] OS name = windows 10
+[INFO ] [2022-01-02 12:01:47,101] Driver instance name = chromedriver: chrome on windows (53a488bbf8e4f92bcfec8036bf01c0ad)
+[INFO ] [2022-01-02 12:02:16,184] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 12:02:16,185] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 12:02:16,586] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 12:02:22,965] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 12:02:23,960] Pre-Condition - Step 03: Input to Firstname textbox with value 'Rosalee'
+[INFO ] [2022-01-02 12:02:24,093] Pre-Condition - Step 04: Input to Lastname textbox with value 'Blanda'
+[INFO ] [2022-01-02 12:02:24,227] Pre-Condition - Step 05: Input to Email textbox with value 'reynaldo.ruecker@gmail.com'
+[INFO ] [2022-01-02 12:02:24,358] Pre-Condition - Step 06: Input to Password textbox with value '4csak5erp79esw'
+[INFO ] [2022-01-02 12:02:24,495] Pre-Condition - Step 07: Input to Confirm password textbox with value '4csak5erp79esw'
+[INFO ] [2022-01-02 12:02:24,623] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 12:02:26,066] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 12:02:26,135]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:26,198] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 12:02:26,717] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 12:02:26,809] My_Account_01 - Step 03: Input to First name textbox with value 'Alonzo'
+[INFO ] [2022-01-02 12:02:26,940] My_Account_01 - Step 04: Input to Last name textbox with value 'Labadie'
+[INFO ] [2022-01-02 12:02:27,057] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 12:02:27,201] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 12:02:27,302] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 12:02:27,442] My_Account_01 - Step 08: Input to Email textbox with value 'dalia.kuvalis@hotmail.com'
+[INFO ] [2022-01-02 12:02:27,582] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 12:02:27,713] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 12:02:28,621] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 12:02:28,674]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:28,675] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 12:02:28,734]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:28,734] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 12:02:28,797]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:28,798] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 12:02:28,904]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:28,905] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 12:02:29,059]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:29,059] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 12:02:29,768]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:29,769] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 12:02:29,835]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:29,836] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 12:02:29,902]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 12:02:30,042] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 02: Input to First name textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 03: Input to Last name textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 04: Input to Company textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:02:30,043] My_Account_02 - Step 03: Input to Country textbox
+[INFO ] [2022-01-02 12:02:30,062] Post-Condition: Close browser
+[INFO ] [2022-01-02 12:02:30,062] OS name = windows 10
+[INFO ] [2022-01-02 12:02:30,063] Driver instance name = chromedriver: chrome on windows (a946da0d4ced2a84724e6638167698b0)
+[INFO ] [2022-01-02 19:05:02,036] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:05:02,038] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:05:02,660] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:05:13,166] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:05:14,402] Pre-Condition - Step 03: Input to Firstname textbox with value 'Mari'
+[INFO ] [2022-01-02 19:05:14,788] Pre-Condition - Step 04: Input to Lastname textbox with value 'Vandervort'
+[INFO ] [2022-01-02 19:05:15,058] Pre-Condition - Step 05: Input to Email textbox with value 'iliana.haag@gmail.com'
+[INFO ] [2022-01-02 19:05:15,377] Pre-Condition - Step 06: Input to Password textbox with value '1ljbeo69txv2n'
+[INFO ] [2022-01-02 19:05:15,672] Pre-Condition - Step 07: Input to Confirm password textbox with value '1ljbeo69txv2n'
+[INFO ] [2022-01-02 19:05:15,864] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:05:17,222] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:05:17,334]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:17,466] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:05:18,158] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:05:18,322] My_Account_01 - Step 03: Input to First name textbox with value 'Dewayne'
+[INFO ] [2022-01-02 19:05:18,536] My_Account_01 - Step 04: Input to Last name textbox with value 'Aufderhar'
+[INFO ] [2022-01-02 19:05:18,746] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:05:19,017] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:05:19,236] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:05:19,448] My_Account_01 - Step 08: Input to Email textbox with value 'kallie.friesen@yahoo.com'
+[INFO ] [2022-01-02 19:05:19,755] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:05:19,984] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:05:21,234] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:05:21,301]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:21,302] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:05:21,377]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:21,377] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:05:21,437]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:21,438] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:05:21,643]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:21,644] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:05:22,014]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:22,014] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:05:23,459]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:23,459] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:05:23,578]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:23,578] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:05:23,716]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:05:24,067] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:05:25,466] My_Account_02 - Step 02: Input to First name textbox with value 'Mari'
+[INFO ] [2022-01-02 19:05:56,463] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:05:57,970] My_Account_03 - Step 02: Input to Old password textbox with value '1ljbeo69txv2n'
+[INFO ] [2022-01-02 19:06:28,311] 
+[INFO ] [2022-01-02 19:06:58,800] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:06:58,801] OS name = windows 10
+[INFO ] [2022-01-02 19:06:58,801] Driver instance name = chromedriver: chrome on windows (a28ef32f824fe9a2cd64bd8996ea435b)
+[INFO ] [2022-01-02 19:06:58,815] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHI-PC', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a28ef32f824fe9a2cd64bd8996ea435b
+[INFO ] [2022-01-02 19:10:13,101] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:10:13,103] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:10:13,699] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:10:22,480] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:10:24,578] Pre-Condition - Step 03: Input to Firstname textbox with value 'Glenna'
+[INFO ] [2022-01-02 19:10:24,934] Pre-Condition - Step 04: Input to Lastname textbox with value 'Ortiz'
+[INFO ] [2022-01-02 19:10:25,330] Pre-Condition - Step 05: Input to Email textbox with value 'lamont.shanahan@yahoo.com'
+[INFO ] [2022-01-02 19:10:25,633] Pre-Condition - Step 06: Input to Password textbox with value 'a2gkfocc6v0'
+[INFO ] [2022-01-02 19:10:25,902] Pre-Condition - Step 07: Input to Confirm password textbox with value 'a2gkfocc6v0'
+[INFO ] [2022-01-02 19:10:26,113] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:10:28,320] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:10:28,401]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:28,513] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:10:29,312] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:10:29,625] My_Account_01 - Step 03: Input to First name textbox with value 'Seymour'
+[INFO ] [2022-01-02 19:10:30,028] My_Account_01 - Step 04: Input to Last name textbox with value 'Wilderman'
+[INFO ] [2022-01-02 19:10:30,228] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:10:30,435] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:10:30,636] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:10:30,948] My_Account_01 - Step 08: Input to Email textbox with value 'kyle.feil@gmail.com'
+[INFO ] [2022-01-02 19:10:31,318] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:10:31,570] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:10:33,379] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:10:33,471]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:33,471] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:10:33,598]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:33,599] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:10:33,761]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:33,761] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:10:34,086]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:34,087] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:10:34,672]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:34,673] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:10:36,652]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:36,653] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:10:36,766]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:36,766] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:10:36,909]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:10:37,232] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:10:37,930] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:10:38,901] My_Account_02 - Step 02: Input to First name textbox with value 'Glenna'
+[INFO ] [2022-01-02 19:10:39,121] My_Account_02 - Step 03: Input to Last name textbox with value 'Ortiz'
+[INFO ] [2022-01-02 19:10:39,346] My_Account_02 - Step 04: Input to Email textbox with value 'lamont.shanahan@yahoo.com'
+[INFO ] [2022-01-02 19:10:39,565] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:10:39,909] My_Account_02 - Step 06: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:10:40,265] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:10:40,471] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:10:41,418] My_Account_02 - Step 09: Input to Address 1 textbox with value '7559Simonis Mission'
+[INFO ] [2022-01-02 19:10:41,809] My_Account_02 - Step 10: Input to Address 2 textbox with value '61580Rolfson Creek'
+[INFO ] [2022-01-02 19:10:42,092] My_Account_02 - Step 11: Input to Zip/ portal code textbox with value '27374'
+[INFO ] [2022-01-02 19:10:42,393] My_Account_02 - Step 12: Input to Phone number textbox with value '1-521-366-3885'
+[INFO ] [2022-01-02 19:10:42,642] My_Account_02 - Step 13: Input to Zip/ portal code textbox with value '843-701-6514'
+[INFO ] [2022-01-02 19:10:42,939] My_Account_02 - Step 14: Click to Save button
+[INFO ] [2022-01-02 19:11:13,950] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:11:16,125] My_Account_03 - Step 02: Input to Old password textbox with value 'a2gkfocc6v0'
+[INFO ] [2022-01-02 19:11:16,452] My_Account_03 - Step 03: Input to New password textbox with value 'q7p87uf9yjuv'
+[INFO ] [2022-01-02 19:11:16,903] My_Account_03 - Step 04: Input to Confirm password textbox with value 'q7p87uf9yjuv'
+[INFO ] [2022-01-02 19:11:17,327] My_Account_03 - Step 05: Click to Change Password button
+[INFO ] [2022-01-02 19:11:19,762] My_Account_03 - Step 06: Click to Log out link
+[INFO ] [2022-01-02 19:11:21,417] 
+[INFO ] [2022-01-02 19:11:52,318] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:11:52,318] OS name = windows 10
+[INFO ] [2022-01-02 19:11:52,318] Driver instance name = chromedriver: chrome on windows (7275479726268ab0f37b4c8ac319563b)
+[INFO ] [2022-01-02 19:20:07,831] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:20:07,833] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:20:08,455] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:20:17,038] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:20:18,877] Pre-Condition - Step 03: Input to Firstname textbox with value 'Marion'
+[INFO ] [2022-01-02 19:20:19,136] Pre-Condition - Step 04: Input to Lastname textbox with value 'Lowe'
+[INFO ] [2022-01-02 19:20:19,362] Pre-Condition - Step 05: Input to Email textbox with value 'marchelle.hansen@yahoo.com'
+[INFO ] [2022-01-02 19:20:19,642] Pre-Condition - Step 06: Input to Password textbox with value 'fb6vzk9i'
+[INFO ] [2022-01-02 19:20:19,906] Pre-Condition - Step 07: Input to Confirm password textbox with value 'fb6vzk9i'
+[INFO ] [2022-01-02 19:20:20,102] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:20:21,686] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:20:21,811]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:21,961] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:20:23,103] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:20:23,340] My_Account_01 - Step 03: Input to First name textbox with value 'Darrel'
+[INFO ] [2022-01-02 19:20:23,555] My_Account_01 - Step 04: Input to Last name textbox with value 'McDermott'
+[INFO ] [2022-01-02 19:20:23,952] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:20:24,271] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:20:24,589] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:20:24,763] My_Account_01 - Step 08: Input to Email textbox with value 'marlyn.fahey@gmail.com'
+[INFO ] [2022-01-02 19:20:25,116] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:20:25,573] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:20:26,954] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:20:27,053]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:27,054] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:20:27,144]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:27,145] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:20:27,254]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:27,255] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:20:27,455]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:27,455] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:20:27,838]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:27,838] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:20:29,823]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:29,823] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:20:29,936]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:29,937] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:20:30,029]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:20:30,216] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:20:31,878] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:20:32,691] My_Account_02 - Step 02: Input to First name textbox with value 'Marion'
+[INFO ] [2022-01-02 19:20:32,897] My_Account_02 - Step 03: Input to Last name textbox with value 'Lowe'
+[INFO ] [2022-01-02 19:20:33,105] My_Account_02 - Step 04: Input to Email textbox with value 'marchelle.hansen@yahoo.com'
+[INFO ] [2022-01-02 19:20:33,501] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:20:33,913] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:20:34,094] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:20:34,996] My_Account_02 - Step 06: Input to Country textbox with value 'Rohanburgh'
+[INFO ] [2022-01-02 19:21:05,895] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:21:36,583] 
+[INFO ] [2022-01-02 19:22:06,962] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:22:06,963] OS name = windows 10
+[INFO ] [2022-01-02 19:22:06,964] Driver instance name = chromedriver: chrome on windows (288b1f55476b9fb95497b29f6977d06c)
+[INFO ] [2022-01-02 19:22:06,974] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHI-PC', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 288b1f55476b9fb95497b29f6977d06c
+[INFO ] [2022-01-02 19:22:10,318] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:22:10,319] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:22:10,920] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:22:19,343] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:22:20,812] Pre-Condition - Step 03: Input to Firstname textbox with value 'Yolande'
+[INFO ] [2022-01-02 19:22:21,052] Pre-Condition - Step 04: Input to Lastname textbox with value 'Bode'
+[INFO ] [2022-01-02 19:22:21,410] Pre-Condition - Step 05: Input to Email textbox with value 'pennie.kuphal@hotmail.com'
+[INFO ] [2022-01-02 19:22:21,644] Pre-Condition - Step 06: Input to Password textbox with value 'albpxm9yaqe'
+[INFO ] [2022-01-02 19:22:21,854] Pre-Condition - Step 07: Input to Confirm password textbox with value 'albpxm9yaqe'
+[INFO ] [2022-01-02 19:22:22,276] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:22:23,632] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:22:23,838]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:23,980] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:22:24,576] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:22:24,745] My_Account_01 - Step 03: Input to First name textbox with value 'Nicolette'
+[INFO ] [2022-01-02 19:22:24,921] My_Account_01 - Step 04: Input to Last name textbox with value 'Halvorson'
+[INFO ] [2022-01-02 19:22:25,318] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:22:25,658] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:22:26,013] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:22:26,345] My_Account_01 - Step 08: Input to Email textbox with value 'sana.lemke@yahoo.com'
+[INFO ] [2022-01-02 19:22:26,762] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:22:27,121] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:22:28,161] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:22:28,282]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:28,282] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:22:28,390]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:28,390] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:22:28,498]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:28,498] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:22:28,693]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:28,694] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:22:29,045]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:29,045] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:22:30,559]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:30,559] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:22:30,620]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:30,620] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:22:30,682]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:30,933] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:22:32,223] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:22:33,227] My_Account_02 - Step 02: Input to First name textbox with value 'Yolande'
+[INFO ] [2022-01-02 19:22:33,635] My_Account_02 - Step 03: Input to Last name textbox with value 'Bode'
+[INFO ] [2022-01-02 19:22:33,892] My_Account_02 - Step 04: Input to Email textbox with value 'pennie.kuphal@hotmail.com'
+[INFO ] [2022-01-02 19:22:34,241] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:22:34,518] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:22:34,732] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:22:35,661] My_Account_02 - Step 06: Input to Country textbox with value 'Lake Elyseview'
+[INFO ] [2022-01-02 19:22:35,940] My_Account_02 - Step 09: Input to Address 1 textbox with value '6784West Plains'
+[INFO ] [2022-01-02 19:22:36,193] My_Account_02 - Step 10: Input to Address 2 textbox with value '5496Romaguera Square'
+[INFO ] [2022-01-02 19:22:36,521] My_Account_02 - Step 11: Input to Zip/ portal code textbox with value '70362-7789'
+[INFO ] [2022-01-02 19:22:36,761] My_Account_02 - Step 12: Input to Phone number textbox with value '(917) 645-8795'
+[INFO ] [2022-01-02 19:22:37,009] My_Account_02 - Step 13: Input to Zip/ portal code textbox with value '1-684-375-0356'
+[INFO ] [2022-01-02 19:22:37,269] My_Account_02 - Step 14: Click to Save button
+[INFO ] [2022-01-02 19:22:38,632] My_Account_02 - Step 15: Verify Full name added
+[INFO ] [2022-01-02 19:22:38,779]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:38,779] My_Account_02 - Step 16: Verify Email added
+[INFO ] [2022-01-02 19:22:38,922]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-01-02 19:22:38,922] My_Account_02 - Step 17: Verify Phone number added
+[INFO ] [2022-01-02 19:22:39,057]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,057] My_Account_02 - Step 18: Verify Fax number added
+[INFO ] [2022-01-02 19:22:39,200]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,200] My_Account_02 - Step 19: Verify Company name added
+[INFO ] [2022-01-02 19:22:39,344]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,344] My_Account_02 - Step 20: Verify Address 1 added
+[INFO ] [2022-01-02 19:22:39,471]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,471] My_Account_02 - Step 21: Verify Address 2 added
+[INFO ] [2022-01-02 19:22:39,552]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,552] My_Account_02 - Step 22: Verify City state zip added
+[INFO ] [2022-01-02 19:22:39,651]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:39,651] My_Account_02 - Step 23: Verify Country name added
+[INFO ] [2022-01-02 19:22:39,730]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:22:40,063] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:22:41,479] My_Account_03 - Step 02: Input to Old password textbox with value 'albpxm9yaqe'
+[INFO ] [2022-01-02 19:22:41,832] My_Account_03 - Step 03: Input to New password textbox with value 'nu81zo4lnjj'
+[INFO ] [2022-01-02 19:22:42,095] My_Account_03 - Step 04: Input to Confirm password textbox with value 'nu81zo4lnjj'
+[INFO ] [2022-01-02 19:22:42,441] My_Account_03 - Step 05: Click to Change Password button
+[INFO ] [2022-01-02 19:22:43,665] My_Account_03 - Step 05: Click to Close icon
+[INFO ] [2022-01-02 19:22:43,969] My_Account_03 - Step 06: Click to Log out link
+[INFO ] [2022-01-02 19:22:45,526] 
+[INFO ] [2022-01-02 19:23:15,778] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:23:15,780] OS name = windows 10
+[INFO ] [2022-01-02 19:23:15,780] Driver instance name = chromedriver: chrome on windows (fd7f05455c5fbc3048bce230d7ef31a0)
+[INFO ] [2022-01-02 19:23:15,788] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHI-PC', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd7f05455c5fbc3048bce230d7ef31a0
+[INFO ] [2022-01-02 19:23:41,923] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:23:41,924] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:23:42,504] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:23:51,375] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:23:53,016] Pre-Condition - Step 03: Input to Firstname textbox with value 'Joye'
+[INFO ] [2022-01-02 19:23:53,428] Pre-Condition - Step 04: Input to Lastname textbox with value 'Batz'
+[INFO ] [2022-01-02 19:23:53,806] Pre-Condition - Step 05: Input to Email textbox with value 'lynnette.kihn@gmail.com'
+[INFO ] [2022-01-02 19:23:54,240] Pre-Condition - Step 06: Input to Password textbox with value 'vx08f65skwkn'
+[INFO ] [2022-01-02 19:23:54,440] Pre-Condition - Step 07: Input to Confirm password textbox with value 'vx08f65skwkn'
+[INFO ] [2022-01-02 19:23:54,698] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:23:55,932] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:23:56,046]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:23:56,175] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:23:56,959] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:23:57,135] My_Account_01 - Step 03: Input to First name textbox with value 'Otto'
+[INFO ] [2022-01-02 19:23:57,316] My_Account_01 - Step 04: Input to Last name textbox with value 'Hilpert'
+[INFO ] [2022-01-02 19:23:57,571] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:23:57,803] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:23:57,979] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:23:58,191] My_Account_01 - Step 08: Input to Email textbox with value 'herbert.hickle@yahoo.com'
+[INFO ] [2022-01-02 19:23:58,443] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:23:58,624] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:23:59,702] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:23:59,801]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:23:59,801] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:23:59,889]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:23:59,889] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:23:59,949]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:23:59,950] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:24:00,114]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:00,114] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:24:00,447]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:00,447] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:24:01,994]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:01,995] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:24:02,107]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:02,108] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:24:02,239]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:02,566] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:24:03,730] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:24:04,631] My_Account_02 - Step 02: Input to First name textbox with value 'Joye'
+[INFO ] [2022-01-02 19:24:04,989] My_Account_02 - Step 03: Input to Last name textbox with value 'Batz'
+[INFO ] [2022-01-02 19:24:05,360] My_Account_02 - Step 04: Input to Email textbox with value 'lynnette.kihn@gmail.com'
+[INFO ] [2022-01-02 19:24:05,796] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:24:06,005] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:24:06,287] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:24:07,256] My_Account_02 - Step 06: Input to Country textbox with value 'Madelinebury'
+[INFO ] [2022-01-02 19:24:07,484] My_Account_02 - Step 09: Input to Address 1 textbox with value '740Glen Underpass'
+[INFO ] [2022-01-02 19:24:07,830] My_Account_02 - Step 10: Input to Address 2 textbox with value '8011Powlowski Tunnel'
+[INFO ] [2022-01-02 19:24:08,137] My_Account_02 - Step 11: Input to Zip/ portal code textbox with value '02920-2610'
+[INFO ] [2022-01-02 19:24:08,456] My_Account_02 - Step 12: Input to Phone number textbox with value '(507) 596-4452'
+[INFO ] [2022-01-02 19:24:08,809] My_Account_02 - Step 13: Input to Zip/ portal code textbox with value '(848) 563-8506'
+[INFO ] [2022-01-02 19:24:09,031] My_Account_02 - Step 14: Click to Save button
+[INFO ] [2022-01-02 19:24:10,446] My_Account_02 - Step 15: Verify Full name added
+[INFO ] [2022-01-02 19:24:10,550]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:10,550] My_Account_02 - Step 16: Verify Email added
+[INFO ] [2022-01-02 19:24:10,658]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-01-02 19:24:10,659] My_Account_02 - Step 17: Verify Phone number added
+[INFO ] [2022-01-02 19:24:10,766]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:10,766] My_Account_02 - Step 18: Verify Fax number added
+[INFO ] [2022-01-02 19:24:10,883]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:10,884] My_Account_02 - Step 19: Verify Company name added
+[INFO ] [2022-01-02 19:24:10,997]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:10,998] My_Account_02 - Step 20: Verify Address 1 added
+[INFO ] [2022-01-02 19:24:11,105]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:11,106] My_Account_02 - Step 21: Verify Address 2 added
+[INFO ] [2022-01-02 19:24:11,238]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:11,238] My_Account_02 - Step 22: Verify City state zip added
+[INFO ] [2022-01-02 19:24:11,346]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:11,346] My_Account_02 - Step 23: Verify Country name added
+[INFO ] [2022-01-02 19:24:11,457]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:11,797] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:24:13,109] My_Account_03 - Step 02: Input to Old password textbox with value 'vx08f65skwkn'
+[INFO ] [2022-01-02 19:24:13,469] My_Account_03 - Step 03: Input to New password textbox with value 'deufksqbz7'
+[INFO ] [2022-01-02 19:24:13,791] My_Account_03 - Step 04: Input to Confirm password textbox with value 'deufksqbz7'
+[INFO ] [2022-01-02 19:24:14,159] My_Account_03 - Step 05: Click to Change Password button
+[INFO ] [2022-01-02 19:24:15,230] My_Account_03 - Step 05: Click to Close icon
+[INFO ] [2022-01-02 19:24:15,519] My_Account_03 - Step 06: Click to Log out link
+[INFO ] [2022-01-02 19:24:17,263] My_Account_03 - Step 07: Open Login page
+[INFO ] [2022-01-02 19:24:18,153] My_Account_03 - Step 08: Input to Email textbox with value 'herbert.hickle@yahoo.com'
+[INFO ] [2022-01-02 19:24:18,576] My_Account_03 - Step 09: Input to Password textbox with value 'deufksqbz7'
+[INFO ] [2022-01-02 19:24:18,947] My_Account_03 - Step 10: Click to Login button
+[INFO ] [2022-01-02 19:24:20,258] My_Account_03 - Step 11: Verify My account link displayed
+[INFO ] [2022-01-02 19:24:20,464]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:24:20,477] 
+[INFO ] [2022-01-02 19:24:57,393] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:24:57,393] OS name = windows 10
+[INFO ] [2022-01-02 19:24:57,394] Driver instance name = chromedriver: chrome on windows (0903e235df7d41e470226e30bb222848)
+[INFO ] [2022-01-02 19:27:42,674] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:27:42,676] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:27:43,247] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:27:51,825] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:27:53,490] Pre-Condition - Step 03: Input to Firstname textbox with value 'Herschel'
+[INFO ] [2022-01-02 19:27:53,864] Pre-Condition - Step 04: Input to Lastname textbox with value 'O'Hara'
+[INFO ] [2022-01-02 19:27:54,227] Pre-Condition - Step 05: Input to Email textbox with value 'oscar.damore@gmail.com'
+[INFO ] [2022-01-02 19:27:54,662] Pre-Condition - Step 06: Input to Password textbox with value 'eq6nrkrnlgwgctd'
+[INFO ] [2022-01-02 19:27:55,083] Pre-Condition - Step 07: Input to Confirm password textbox with value 'eq6nrkrnlgwgctd'
+[INFO ] [2022-01-02 19:27:55,272] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:27:56,535] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:27:56,668]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:27:56,762] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:27:57,502] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:27:57,808] My_Account_01 - Step 03: Input to First name textbox with value 'Dan'
+[INFO ] [2022-01-02 19:27:58,100] My_Account_01 - Step 04: Input to Last name textbox with value 'Mraz'
+[INFO ] [2022-01-02 19:27:58,299] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:27:58,553] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:27:58,889] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:27:59,213] My_Account_01 - Step 08: Input to Email textbox with value 'mee.gulgowski@hotmail.com'
+[INFO ] [2022-01-02 19:27:59,590] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:27:59,827] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:28:01,086] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:28:01,182]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:01,183] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:28:01,248]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:01,248] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:28:01,344]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:01,344] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:28:01,549]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:01,549] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:28:02,063]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:02,064] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:28:03,993]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:03,995] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:28:04,051]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:04,051] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:28:04,127]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:04,359] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:28:05,597] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:28:06,471] My_Account_02 - Step 02: Input to First name textbox with value 'Herschel'
+[INFO ] [2022-01-02 19:28:06,831] My_Account_02 - Step 03: Input to Last name textbox with value 'O'Hara'
+[INFO ] [2022-01-02 19:28:07,237] My_Account_02 - Step 04: Input to Email textbox with value 'oscar.damore@gmail.com'
+[INFO ] [2022-01-02 19:28:07,659] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:28:08,014] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:28:08,352] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:28:09,282] My_Account_02 - Step 06: Input to Country textbox with value 'East Greggshire'
+[INFO ] [2022-01-02 19:28:09,621] My_Account_02 - Step 09: Input to Address 1 textbox with value '0867Gordon Row'
+[INFO ] [2022-01-02 19:28:09,999] My_Account_02 - Step 10: Input to Address 2 textbox with value '99103Shona Flats'
+[INFO ] [2022-01-02 19:28:10,292] My_Account_02 - Step 11: Input to Zip/ portal code textbox with value '41083'
+[INFO ] [2022-01-02 19:28:10,522] My_Account_02 - Step 12: Input to Phone number textbox with value '1-734-287-1766'
+[INFO ] [2022-01-02 19:28:10,784] My_Account_02 - Step 13: Input to Zip/ portal code textbox with value '875-793-8974'
+[INFO ] [2022-01-02 19:28:11,182] My_Account_02 - Step 14: Click to Save button
+[INFO ] [2022-01-02 19:28:12,786] My_Account_02 - Step 15: Verify Full name added
+[INFO ] [2022-01-02 19:28:12,964]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:12,964] My_Account_02 - Step 16: Verify Email added
+[INFO ] [2022-01-02 19:28:13,104]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,104] My_Account_02 - Step 17: Verify Phone number added
+[INFO ] [2022-01-02 19:28:13,206]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,206] My_Account_02 - Step 18: Verify Fax number added
+[INFO ] [2022-01-02 19:28:13,330]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,330] My_Account_02 - Step 19: Verify Company name added
+[INFO ] [2022-01-02 19:28:13,442]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,442] My_Account_02 - Step 20: Verify Address 1 added
+[INFO ] [2022-01-02 19:28:13,511]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,511] My_Account_02 - Step 21: Verify Address 2 added
+[INFO ] [2022-01-02 19:28:13,616]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,616] My_Account_02 - Step 22: Verify City state zip added
+[INFO ] [2022-01-02 19:28:13,701]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:13,701] My_Account_02 - Step 23: Verify Country name added
+[INFO ] [2022-01-02 19:28:13,780]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:14,148] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:28:14,860] My_Account_03 - Step 02: Input to Old password textbox with value 'eq6nrkrnlgwgctd'
+[INFO ] [2022-01-02 19:28:15,098] My_Account_03 - Step 03: Input to New password textbox with value 'qpl9nf30'
+[INFO ] [2022-01-02 19:28:15,513] My_Account_03 - Step 04: Input to Confirm password textbox with value 'qpl9nf30'
+[INFO ] [2022-01-02 19:28:15,875] My_Account_03 - Step 05: Click to Change Password button
+[INFO ] [2022-01-02 19:28:17,199] My_Account_03 - Step 05: Click to Close icon
+[INFO ] [2022-01-02 19:28:17,492] My_Account_03 - Step 06: Click to Log out link
+[INFO ] [2022-01-02 19:28:19,265] My_Account_03 - Step 07: Open Login page
+[INFO ] [2022-01-02 19:28:20,177] My_Account_03 - Step 08: Input to Email textbox with value 'mee.gulgowski@hotmail.com'
+[INFO ] [2022-01-02 19:28:20,545] My_Account_03 - Step 09: Input to Password textbox with value 'qpl9nf30'
+[INFO ] [2022-01-02 19:28:20,949] My_Account_03 - Step 10: Click to Login button
+[INFO ] [2022-01-02 19:28:22,492] My_Account_03 - Step 11: Verify My account link displayed
+[INFO ] [2022-01-02 19:28:22,685]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:22,699] 
+[INFO ] [2022-01-02 19:28:32,463]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:32,648]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:28:32,658] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:28:32,658] OS name = windows 10
+[INFO ] [2022-01-02 19:28:32,658] Driver instance name = chromedriver: chrome on windows (6c68e0f64548cc0ba4c1bf875be020a0)
+[INFO ] [2022-01-02 19:29:48,127] --------------------- START delete file in folder ------------------
+[INFO ] [2022-01-02 19:29:48,129] -------------------- END delete file in folder ---------------------
+[INFO ] [2022-01-02 19:29:48,712] Pre-Condition - Step 01: Open browser 'chrome' with URL='https://demo.nopcommerce.com/'
+[INFO ] [2022-01-02 19:29:57,606] Pre-Condition - Step 02: Open Register page
+[INFO ] [2022-01-02 19:29:58,966] Pre-Condition - Step 03: Input to Firstname textbox with value 'Ligia'
+[INFO ] [2022-01-02 19:29:59,175] Pre-Condition - Step 04: Input to Lastname textbox with value 'Schamberger'
+[INFO ] [2022-01-02 19:29:59,536] Pre-Condition - Step 05: Input to Email textbox with value 'reggie.greenfelder@gmail.com'
+[INFO ] [2022-01-02 19:30:00,030] Pre-Condition - Step 06: Input to Password textbox with value 'qpflrekzi'
+[INFO ] [2022-01-02 19:30:00,233] Pre-Condition - Step 07: Input to Confirm password textbox with value 'qpflrekzi'
+[INFO ] [2022-01-02 19:30:00,489] Pre-Condition - Step 08: Click to Register button
+[INFO ] [2022-01-02 19:30:01,589] Pre-Condition - Step 09: Verify successful message display
+[INFO ] [2022-01-02 19:30:01,691]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:01,815] My_Account_01 - Step 01: Open Customer Info page
+[INFO ] [2022-01-02 19:30:02,597] My_Account_01 - Step 02: Select to 'female' radio button
+[INFO ] [2022-01-02 19:30:02,773] My_Account_01 - Step 03: Input to First name textbox with value 'Sadie'
+[INFO ] [2022-01-02 19:30:03,014] My_Account_01 - Step 04: Input to Last name textbox with value 'Schulist'
+[INFO ] [2022-01-02 19:30:03,236] My_Account_01 - Step 05: Select item in Day dropdown
+[INFO ] [2022-01-02 19:30:03,449] My_Account_01 - Step 06: Select item in Month dropdown
+[INFO ] [2022-01-02 19:30:03,683] My_Account_01 - Step 07: Select item in Year dropdown
+[INFO ] [2022-01-02 19:30:03,994] My_Account_01 - Step 08: Input to Email textbox with value 'reginald.vonrueden@gmail.com'
+[INFO ] [2022-01-02 19:30:04,460] My_Account_01 - Step 09: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:30:04,930] My_Account_01 - Step 10: Click to Save button
+[INFO ] [2022-01-02 19:30:06,674] My_Account_01 - Step 11: Verify Gender updated successfully
+[INFO ] [2022-01-02 19:30:06,779]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:06,780] My_Account_01 - Step 12: Verify First name updated successfully
+[INFO ] [2022-01-02 19:30:06,917]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:06,918] My_Account_01 - Step 13: Verify Last name updated successfully
+[INFO ] [2022-01-02 19:30:07,056]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:07,056] My_Account_01 - Step 14: Verify Day dropdown updated successfully
+[INFO ] [2022-01-02 19:30:07,377]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:07,377] My_Account_01 - Step 15: Verify Month dropdown updated successfully
+[INFO ] [2022-01-02 19:30:07,918]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:07,919] My_Account_01 - Step 16: Verify Year dropdown updated successfully
+[INFO ] [2022-01-02 19:30:09,796]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:09,796] My_Account_01 - Step 17: Verify Email updated successfully
+[INFO ] [2022-01-02 19:30:09,894]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:09,895] My_Account_01 - Step 18: Verify Company updated successfully
+[INFO ] [2022-01-02 19:30:10,008]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:10,259] My_Account_02 - Step 01: Open Address page
+[INFO ] [2022-01-02 19:30:11,556] My_Account_02 - Step 01: Click to Add New button
+[INFO ] [2022-01-02 19:30:12,354] My_Account_02 - Step 02: Input to First name textbox with value 'Ligia'
+[INFO ] [2022-01-02 19:30:12,712] My_Account_02 - Step 03: Input to Last name textbox with value 'Schamberger'
+[INFO ] [2022-01-02 19:30:12,895] My_Account_02 - Step 04: Input to Email textbox with value 'reggie.greenfelder@gmail.com'
+[INFO ] [2022-01-02 19:30:13,247] My_Account_02 - Step 05: Input to Company textbox with value 'Automation FC'
+[INFO ] [2022-01-02 19:30:13,498] My_Account_02 - Step 07: Input to Country textbox with value 'United States'
+[INFO ] [2022-01-02 19:30:13,766] My_Account_02 - Step 08: Input to State/ Province textbox with value 'California'
+[INFO ] [2022-01-02 19:30:14,689] My_Account_02 - Step 06: Input to Country textbox with value 'Claritaland'
+[INFO ] [2022-01-02 19:30:15,026] My_Account_02 - Step 09: Input to Address 1 textbox with value '921Foster Via'
+[INFO ] [2022-01-02 19:30:15,359] My_Account_02 - Step 10: Input to Address 2 textbox with value '1795Neville Prairie'
+[INFO ] [2022-01-02 19:30:15,603] My_Account_02 - Step 11: Input to Zip/ portal code textbox with value '39545'
+[INFO ] [2022-01-02 19:30:15,871] My_Account_02 - Step 12: Input to Phone number textbox with value '530.849.1406'
+[INFO ] [2022-01-02 19:30:16,210] My_Account_02 - Step 13: Input to Zip/ portal code textbox with value '1-931-445-8818'
+[INFO ] [2022-01-02 19:30:16,514] My_Account_02 - Step 14: Click to Save button
+[INFO ] [2022-01-02 19:30:18,027] My_Account_02 - Step 15: Verify Full name added
+[INFO ] [2022-01-02 19:30:18,190]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,190] My_Account_02 - Step 16: Verify Email added
+[INFO ] [2022-01-02 19:30:18,331]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,331] My_Account_02 - Step 17: Verify Phone number added
+[INFO ] [2022-01-02 19:30:18,482]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,482] My_Account_02 - Step 18: Verify Fax number added
+[INFO ] [2022-01-02 19:30:18,560]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,560] My_Account_02 - Step 19: Verify Company name added
+[INFO ] [2022-01-02 19:30:18,659]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,660] My_Account_02 - Step 20: Verify Address 1 added
+[INFO ] [2022-01-02 19:30:18,805]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,806] My_Account_02 - Step 21: Verify Address 2 added
+[INFO ] [2022-01-02 19:30:18,956]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:18,957] My_Account_02 - Step 22: Verify City state zip added
+[INFO ] [2022-01-02 19:30:19,096]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:19,097] My_Account_02 - Step 23: Verify Country name added
+[INFO ] [2022-01-02 19:30:19,242]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:19,283] My_Account_03 - Step 01: Open Change Password page
+[INFO ] [2022-01-02 19:30:20,062] My_Account_03 - Step 02: Input to Old password textbox with value 'qpflrekzi'
+[INFO ] [2022-01-02 19:30:20,276] My_Account_03 - Step 03: Input to New password textbox with value 'aexkntth'
+[INFO ] [2022-01-02 19:30:20,599] My_Account_03 - Step 04: Input to Confirm password textbox with value 'aexkntth'
+[INFO ] [2022-01-02 19:30:20,914] My_Account_03 - Step 05: Click to Change Password button
+[INFO ] [2022-01-02 19:30:21,957] My_Account_03 - Step 05: Click to Close icon
+[INFO ] [2022-01-02 19:30:22,229] My_Account_03 - Step 06: Click to Log out link
+[INFO ] [2022-01-02 19:30:24,270] My_Account_03 - Step 07: Open Login page
+[INFO ] [2022-01-02 19:30:25,045] My_Account_03 - Step 08: Input to Email textbox with value 'reginald.vonrueden@gmail.com'
+[INFO ] [2022-01-02 19:30:25,346] My_Account_03 - Step 09: Input to Password textbox with value 'aexkntth'
+[INFO ] [2022-01-02 19:30:25,713] My_Account_03 - Step 10: Click to Login button
+[INFO ] [2022-01-02 19:30:27,099] My_Account_03 - Step 11: Verify My account link displayed
+[INFO ] [2022-01-02 19:30:27,307]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:27,319] 
+[INFO ] [2022-01-02 19:30:35,439]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:35,588]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-02 19:30:35,597] Post-Condition: Close browser
+[INFO ] [2022-01-02 19:30:35,598] OS name = windows 10
+[INFO ] [2022-01-02 19:30:35,598] Driver instance name = chromedriver: chrome on windows (1252a34230a6e6e050e01db02eb71da2)

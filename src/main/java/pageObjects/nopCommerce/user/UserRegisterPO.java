@@ -22,11 +22,6 @@ public class UserRegisterPO extends BasePage {
 		return getElementText(driver, UserRegisterPageUI.ERROR_MESSAGE_BY_ID, messageID);
 	}
 
-	public void inputToTextboxByID(String textboxID, String textValue) {
-		waitForElementVisible(driver, UserRegisterPageUI.TEXTBOX_BY_ID, textboxID);
-		sendkeyToElement(driver, UserRegisterPageUI.TEXTBOX_BY_ID, textValue, textboxID);
-	}
-
 	public boolean isSuccessfulMsgDisplayed() {
 		waitForElementVisible(driver, UserRegisterPageUI.REGISTER_SUCCESS_MSG);
 		return isElementDisplayed(driver, UserRegisterPageUI.REGISTER_SUCCESS_MSG);

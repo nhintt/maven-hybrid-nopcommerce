@@ -23,12 +23,7 @@ public class UserLoginPO extends BasePage {
 		waitForElementVisible(driver, UserLoginPageUI.ERROR_MESSAGE_AT_EMAIL_TEXTBOX);
 		return getElementText(driver, UserLoginPageUI.ERROR_MESSAGE_AT_EMAIL_TEXTBOX);
 	}
-
-	public void inputToTextboxByID(String textboxID, String textValue) {
-		waitForElementVisible(driver, UserLoginPageUI.TEXTBOX_BY_ID, textboxID);
-		sendkeyToElement(driver, UserLoginPageUI.TEXTBOX_BY_ID, textValue, textboxID);
-	}
-
+	
 	public String getGenericErrorMsg() {
 		waitForElementVisible(driver, UserLoginPageUI.LOGIN_ERROR_MSG);
 		return getElementText(driver, UserLoginPageUI.LOGIN_ERROR_MSG);

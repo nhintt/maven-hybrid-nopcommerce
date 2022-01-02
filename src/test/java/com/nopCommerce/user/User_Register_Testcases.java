@@ -68,19 +68,19 @@ public class User_Register_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Register_02 - Step 02: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Register_02 - Step 03: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Register_02 - Step 04: Input to Email textbox with value 'abc@abc!'");
-		userRegisterPage.inputToTextboxByID("Email", "abc@abc!");
+		userRegisterPage.inputToTextboxByID(null, "Email", "abc@abc!");
 		
 		log.info("Register_02 - Step 05: Input to Password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("Password", password);
+		userRegisterPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Register_02 - Step 06: Input to Confirm password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", password);
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", password);
 		
 		log.info("Register_02 - Step 07: Click to Register button");
 		userRegisterPage.clickToRegisterButton();
@@ -96,19 +96,19 @@ public class User_Register_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Register_03 - Step 02: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Register_03 - Step 03: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Register_03 - Step 04: Input to Email textbox with value '" + emailAddress + "'");
-		userRegisterPage.inputToTextboxByID("Email", emailAddress);
+		userRegisterPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Register_03 - Step 05: Input to Password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("Password", password);
+		userRegisterPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Register_03 - Step 06: Input to Confirm password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", password);
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", password);
 		
 		log.info("Register_03 - Step 07: Click to Register button");
 		userRegisterPage.clickToRegisterButton();
@@ -127,19 +127,19 @@ public class User_Register_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Register_04 - Step 02: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Register_04 - Step 03: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Register_04 - Step 04: Input to Email textbox with value '" + emailAddress + "'");
-		userRegisterPage.inputToTextboxByID("Email", emailAddress);
+		userRegisterPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Register_04 - Step 05: Input to Password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("Password", password);
+		userRegisterPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Register_04 - Step 06: Input to Confirm password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", password);
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", password);
 		
 		log.info("Register_04 - Step 07: Click to Register button");
 		userRegisterPage.clickToRegisterButton();
@@ -155,19 +155,19 @@ public class User_Register_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Register_05 - Step 02: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Register_05 - Step 03: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Register_05 - Step 04: Input to Email textbox with value '" + emailAddress + "'");
-		userRegisterPage.inputToTextboxByID("Email", emailAddress);
+		userRegisterPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Register_05 - Step 05: Input to Password textbox with value '12345'");
-		userRegisterPage.inputToTextboxByID("Password", "12345");
+		userRegisterPage.inputToTextboxByID(null, "Password", "12345");
 		
 		log.info("Register_05 - Step 06: Input to Confirm password textbox with value '12345'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", "12345");
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", "12345");
 		
 		log.info("Register_05 - Step 07: Click to Register button");
 		userRegisterPage.clickToRegisterButton();
@@ -183,19 +183,19 @@ public class User_Register_Testcases extends BaseTest {
 		userRegisterPage = PageGeneratorManager.getUserRegisterPage(driver);
 		
 		log.info("Register_04 - Step 02: Input to Firstname textbox with value '" + firstName + "'");
-		userRegisterPage.inputToTextboxByID("FirstName", firstName);
+		userRegisterPage.inputToTextboxByID(null, "FirstName", firstName);
 		
 		log.info("Register_04 - Step 03: Input to Lastname textbox with value '" + lastName + "'");
-		userRegisterPage.inputToTextboxByID("LastName", lastName);
+		userRegisterPage.inputToTextboxByID(null, "LastName", lastName);
 		
 		log.info("Register_04 - Step 04: Input to Email textbox with value '" + emailAddress + "'");
-		userRegisterPage.inputToTextboxByID("Email", emailAddress);
+		userRegisterPage.inputToTextboxByID(null, "Email", emailAddress);
 		
 		log.info("Register_04 - Step 05: Input to Password textbox with value '" + password + "'");
-		userRegisterPage.inputToTextboxByID("Password", password);
+		userRegisterPage.inputToTextboxByID(null, "Password", password);
 		
 		log.info("Register_04 - Step 06: Input to Confirm password textbox with value '123456'");
-		userRegisterPage.inputToTextboxByID("ConfirmPassword", "123456");
+		userRegisterPage.inputToTextboxByID(null, "ConfirmPassword", "123456");
 		
 		log.info("Register_04 - Step 07: Click to Register button");
 		userRegisterPage.clickToRegisterButton();

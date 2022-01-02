@@ -8,5 +8,4 @@ public class UserRegisterPageUI {
 	
 	// DYNAMIC LOCATOR
 	public static final String ERROR_MESSAGE_BY_ID = "//span[@id='%s']";
-	public static final String TEXTBOX_BY_ID = "//input[@id='%s']";
 }

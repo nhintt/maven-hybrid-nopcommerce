@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.nopCommerce.user.UserProductDetailsPO;
+import pageUIs.nopCommerce.user.UserAddressesPageUI;
 import pageUIs.nopCommerce.user.UserBasePageUI;
 
 public class BasePage {
@@ -112,10 +114,6 @@ public class BasePage {
 		return driver.findElement(getByXpath(xpathLocator));
 	}
 
-	private WebElement getWebElement(WebDriver driver, String xpathLocator, String... params) {
-		return driver.findElement(getByXpath(getDynamicLocator(xpathLocator, params)));
-	}
-
 	protected List<WebElement> getListWebElement(WebDriver driver, String xpathLocator) {
 		return driver.findElements(By.xpath(xpathLocator));
 	}
@@ -158,7 +156,7 @@ public class BasePage {
 		element.sendKeys(textValue);
 	}
 
-	public void selectItemInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem) {
+	public void selectItemInDropdownByValue(WebDriver driver, String xpathLocator, String textItem) {
 		Select select = new Select(getWebElement(driver, xpathLocator));
 		select.selectByValue(textItem);
 	}
@@ -483,6 +481,22 @@ public class BasePage {
 	public void openPageByNamePage(WebDriver driver, String pageName) {
 		waitForElementVisible(driver, UserBasePageUI.URL_BY_PAGENAME, pageName);
 		clickToElement(driver, UserBasePageUI.URL_BY_PAGENAME, pageName);
+	}
+	
+	public void openSidebarPageByPageName(WebDriver driver, String pageName) {
+		waitForElementVisible(driver, UserBasePageUI.SIDEBAR_PAGE_BY_NAME, pageName);
+		clickToElement(driver, UserBasePageUI.SIDEBAR_PAGE_BY_NAME, pageName);
+	}
+
+	public UserProductDetailsPO openProDetailByProName(WebDriver driver, String productName) {
+		waitForElementVisible(driver, UserBasePageUI.PRODUCT_LINK, productName);
+		clickToElement(driver, UserBasePageUI.PRODUCT_LINK, productName);
+		return PageGeneratorManager.getUserProductDetailsPage(driver);
+	}
+
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String textValue) {
+		waitForElementVisible(driver, UserBasePageUI.TEXTBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, UserBasePageUI.TEXTBOX_BY_ID, textValue, textboxID);
 	}
 	
 	private WebDriverWait explicitWait;
