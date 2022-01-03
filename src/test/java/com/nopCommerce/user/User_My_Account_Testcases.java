@@ -163,11 +163,11 @@ public class User_My_Account_Testcases extends BaseTest {
 		userAddressesPage.inputToTextboxByID(driver, "Address_Company", editCompanyName);
 		
 		log.info("My_Account_02 - Step 07: Input to Country textbox with value '" + country + "'");
-		userAddressesPage.selectToItemInDropdownByID("Address_CountryId", country);
+		userAddressesPage.selectToItemInDropdownByID(driver, "Address_CountryId", country);
 		
 		log.info("My_Account_02 - Step 08: Input to State/ Province textbox with value '" + state + "'");
 		userAddressesPage.waitForWaitingIconInvisible();
-		userAddressesPage.selectToItemInDropdownByID("Address_StateProvinceId", state);
+		userAddressesPage.selectToItemInDropdownByID(driver, "Address_StateProvinceId", state);
 				
 		log.info("My_Account_02 - Step 06: Input to Country textbox with value '" + cityName + "'");
 		userAddressesPage.inputToTextboxByID(driver, "Address_City", cityName);

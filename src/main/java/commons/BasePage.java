@@ -498,6 +498,16 @@ public class BasePage {
 		waitForElementVisible(driver, UserBasePageUI.TEXTBOX_BY_ID, textboxID);
 		sendkeyToElement(driver, UserBasePageUI.TEXTBOX_BY_ID, textValue, textboxID);
 	}
+
+	public void openFooterPageByPageName(WebDriver driver, String pageName) {
+		waitForElementVisible(driver, UserBasePageUI.FOOTER_PAGE_BY_NAME, pageName);
+		clickToElement(driver, UserBasePageUI.FOOTER_PAGE_BY_NAME, pageName);
+	}
+	
+	public void selectToItemInDropdownByID(WebDriver driver, String dropdownID, String itemText) {
+		waitForElementVisible(driver, UserBasePageUI.DROPDOWN_BY_ID, dropdownID);
+		selectItemInDropdownByText(driver, UserBasePageUI.DROPDOWN_BY_ID, itemText, dropdownID);
+	}
 	
 	private WebDriverWait explicitWait;
 	private int longTimeout = 30;

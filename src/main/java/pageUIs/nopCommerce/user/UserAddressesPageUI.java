@@ -7,6 +7,5 @@ public class UserAddressesPageUI {
 	public static final String ADD_NEW_BUTTON = "//button[text()='Add new']";
 	
 	// DYNAMIC LOCATOR
-	public static final String DROPDOWN_BY_ID = "//select[@id='%s']";
-	public static final String TEXT_VALUE_BY_CLASSNAME= "//li[@class='%s']";
+	public static final String TEXT_VALUE_BY_CLASSNAME = "//li[@class='%s']";
 }

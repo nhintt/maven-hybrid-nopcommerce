@@ -12,11 +12,6 @@ public class UserAddressesPO extends BasePage {
 		this.driver = driver;
 	}
 
-	public void selectToItemInDropdownByID(String dropdownID, String itemText) {
-		waitForElementVisible(driver, UserAddressesPageUI.DROPDOWN_BY_ID, dropdownID);
-		selectItemInDropdownByText(driver, UserAddressesPageUI.DROPDOWN_BY_ID, itemText, dropdownID);
-	}
-
 	public void waitForWaitingIconInvisible() {
 		waitForElementInvisible(driver, UserAddressesPageUI.WAITING_ICON);
 	}
