@@ -509,6 +509,13 @@ public class BasePage {
 		selectItemInDropdownByText(driver, UserBasePageUI.DROPDOWN_BY_ID, itemText, dropdownID);
 	}
 	
+	public void openSubMenuPageByPageName(WebDriver driver, String menuPageName, String subMenuPageName) {
+		waitForElementVisible(driver, UserBasePageUI.MENU_PAGE_BY_NAME, menuPageName);
+		hoverMouseToElement(driver, UserBasePageUI.MENU_PAGE_BY_NAME, menuPageName);
+		waitForElementVisible(driver, UserBasePageUI.MENU_PAGE_BY_NAME, subMenuPageName);
+		clickToElement(driver, UserBasePageUI.MENU_PAGE_BY_NAME, subMenuPageName);
+	}
+	
 	private WebDriverWait explicitWait;
 	private int longTimeout = 30;
 	private int shortTimeout = 5;

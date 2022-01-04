@@ -7,4 +7,5 @@ public class UserBasePageUI {
 	public static final String TEXTBOX_BY_ID = "//input[@id='%s']";
 	public static final String FOOTER_PAGE_BY_NAME = "//div[@class='footer']//a[text()='%s']";
 	public static final String DROPDOWN_BY_ID = "//select[@id='%s']";
+	public static final String MENU_PAGE_BY_NAME = "//ul[@class='top-menu notmobile']//a[text()='%s ']";
 }
