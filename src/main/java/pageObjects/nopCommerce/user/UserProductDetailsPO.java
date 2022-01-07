@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
-import pageUIs.nopCommerce.user.UserDashboardPageUI;
 import pageUIs.nopCommerce.user.UserProductDetailsPageUI;
 
 public class UserProductDetailsPO extends BasePage {
@@ -18,6 +17,11 @@ public class UserProductDetailsPO extends BasePage {
 		waitForElementClickable(driver, UserProductDetailsPageUI.ADD_REVIEW_LINK);
 		clickToElement(driver, UserProductDetailsPageUI.ADD_REVIEW_LINK);
 		return PageGeneratorManager.getUserProductReviewsPage(driver);
+	}
+
+	public boolean isAddWishlistSuccessMsgDisplayed() {
+		waitForElementVisible(driver, UserProductDetailsPageUI.ADD_WISHLIST_SUCCESS_MSG);
+		return isElementDisplayed(driver, UserProductDetailsPageUI.ADD_WISHLIST_SUCCESS_MSG);
 	}
 
 }

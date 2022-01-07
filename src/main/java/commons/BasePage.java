@@ -18,9 +18,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
-import pageUIs.nopCommerce.user.UserAddressesPageUI;
+import pageObjects.nopCommerce.user.UserProductListPO;
 import pageUIs.nopCommerce.user.UserBasePageUI;
+import pageUIs.nopCommerce.user.UserWishlistPageUI;
 
 public class BasePage {
 
@@ -466,6 +468,19 @@ public class BasePage {
 		} else
 			return false;
 	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String xpathLocator, String... params) {
+		overrideGlobalTimeout(driver, shortTimeout);
+		List<WebElement> listElements = getListWebElement(driver, getDynamicLocator(xpathLocator, params));
+		overrideGlobalTimeout(driver, longTimeout);
+		
+		if (listElements.size() == 0) {
+			return true;
+		} else if (listElements.size() > 0 && !listElements.get(0).isDisplayed()) {
+			return true;
+		} else
+			return false;
+	}
 
 	public Set<Cookie> getCookies(WebDriver driver) {
 		return driver.manage().getCookies();
@@ -509,11 +524,33 @@ public class BasePage {
 		selectItemInDropdownByText(driver, UserBasePageUI.DROPDOWN_BY_ID, itemText, dropdownID);
 	}
 	
-	public void openSubMenuPageByPageName(WebDriver driver, String menuPageName, String subMenuPageName) {
+	public UserProductListPO openSubMenuPageByPageName(WebDriver driver, String menuPageName, String subMenuPageName) {
 		waitForElementVisible(driver, UserBasePageUI.MENU_PAGE_BY_NAME, menuPageName);
 		hoverMouseToElement(driver, UserBasePageUI.MENU_PAGE_BY_NAME, menuPageName);
 		waitForElementVisible(driver, UserBasePageUI.MENU_PAGE_BY_NAME, subMenuPageName);
 		clickToElement(driver, UserBasePageUI.MENU_PAGE_BY_NAME, subMenuPageName);
+		return PageGeneratorManager.getUserProductListPage(driver);
+	}
+	
+	public UserDashboardPO openDashboardPageByLogoImg(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.LOGO_IMG);
+		clickToElement(driver, UserBasePageUI.LOGO_IMG);
+		return PageGeneratorManager.getUserDashboardPage(driver);
+	}
+	
+	public void clickToButtonByText(WebDriver driver, String btnName) {
+		waitForElementClickable(driver, UserBasePageUI.BUTTON_BY_TEXT, btnName);
+		clickToElement(driver, UserBasePageUI.BUTTON_BY_TEXT, btnName);
+	}
+
+	public String getPageName(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.PAGE_TITLE);
+		return getElementText(driver, UserBasePageUI.PAGE_TITLE);
+	}
+
+	public String getEmptyMessage(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.EMPTY_MESSAGE);
+		return getElementText(driver, UserBasePageUI.EMPTY_MESSAGE);
 	}
 	
 	private WebDriverWait explicitWait;

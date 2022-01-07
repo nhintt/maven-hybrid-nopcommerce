@@ -11,8 +11,9 @@
 
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
+		
 		<classes>
-			<class name="com.nopCommerce.user.User_Sort_Paging_Testcases" />
+			<class name="com.nopCommerce.user.User_Wishlist_Compare_Recent_View_Testcases" />
 		</classes>
 	</test>
 <!-- 

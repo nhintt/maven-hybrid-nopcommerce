@@ -16,5 +16,15 @@ public class UserDashboardPO extends BasePage {
 		waitForElementVisible(driver, UserDashboardPageUI.MY_ACCOUNT_LINK);
 		return isElementDisplayed(driver, UserDashboardPageUI.MY_ACCOUNT_LINK);
 	}
+	
+	public void clickToButtonByProductNameAndBtnName(String productName, String btnName) {
+		waitForElementClickable(driver, UserDashboardPageUI.BUTTON_BY_PRONAME_AND_BTNNAME, productName, btnName);
+		clickToElement(driver, UserDashboardPageUI.BUTTON_BY_PRONAME_AND_BTNNAME, productName, btnName);
+	}
+
+	public boolean isAddCompareSuccessMsgDisplayed() {
+		waitForElementVisible(driver, UserDashboardPageUI.ADD_COMPARE_SUCCESS_MSG);
+		return isElementDisplayed(driver, UserDashboardPageUI.ADD_COMPARE_SUCCESS_MSG);
+	}
 
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.nopCommerce.user.UserAddressesPO;
 import pageObjects.nopCommerce.user.UserChangePasswordPO;
+import pageObjects.nopCommerce.user.UserCompareProductsPO;
 import pageObjects.nopCommerce.user.UserCustomerInfoPO;
 import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserLoginPO;
@@ -11,8 +12,11 @@ import pageObjects.nopCommerce.user.UserMyProductReviewsPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
 import pageObjects.nopCommerce.user.UserProductListPO;
 import pageObjects.nopCommerce.user.UserProductReviewsPO;
+import pageObjects.nopCommerce.user.UserRecentlyViewedPO;
 import pageObjects.nopCommerce.user.UserRegisterPO;
 import pageObjects.nopCommerce.user.UserSearchPO;
+import pageObjects.nopCommerce.user.UserShoppingCartPO;
+import pageObjects.nopCommerce.user.UserWishlistPO;
 
 public class PageGeneratorManager {
 
@@ -58,6 +62,22 @@ public class PageGeneratorManager {
 	
 	public static UserProductListPO getUserProductListPage(WebDriver driver) {
 		return new UserProductListPO(driver);
+	}
+	
+	public static UserWishlistPO getUserWishlistPage(WebDriver driver) {
+		return new UserWishlistPO(driver);
+	}
+	
+	public static UserShoppingCartPO getUserShoppingCartPage(WebDriver driver) {
+		return new UserShoppingCartPO(driver);
+	}
+	
+	public static UserCompareProductsPO getUserCompareProductsPage(WebDriver driver) {
+		return new UserCompareProductsPO(driver);
+	}
+	
+	public static UserRecentlyViewedPO getUserRecentlyViewedPage(WebDriver driver) {
+		return new UserRecentlyViewedPO(driver);
 	}
 	
 }
