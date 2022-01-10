@@ -4,11 +4,13 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.nopCommerce.user.UserAddressesPO;
 import pageObjects.nopCommerce.user.UserChangePasswordPO;
+import pageObjects.nopCommerce.user.UserCheckoutPO;
 import pageObjects.nopCommerce.user.UserCompareProductsPO;
 import pageObjects.nopCommerce.user.UserCustomerInfoPO;
 import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserLoginPO;
 import pageObjects.nopCommerce.user.UserMyProductReviewsPO;
+import pageObjects.nopCommerce.user.UserOrdersPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
 import pageObjects.nopCommerce.user.UserProductListPO;
 import pageObjects.nopCommerce.user.UserProductReviewsPO;
@@ -78,6 +80,14 @@ public class PageGeneratorManager {
 	
 	public static UserRecentlyViewedPO getUserRecentlyViewedPage(WebDriver driver) {
 		return new UserRecentlyViewedPO(driver);
+	}
+	
+	public static UserCheckoutPO getUserCheckoutPage(WebDriver driver) {
+		return new UserCheckoutPO(driver);
+	}
+	
+	public static UserOrdersPO getOrdersPage(WebDriver driver) {
+		return new UserOrdersPO(driver);
 	}
 	
 }

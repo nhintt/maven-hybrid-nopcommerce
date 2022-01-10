@@ -4,6 +4,10 @@ public class UserBasePageUI {
 	public static final String LOGO_IMG = "//img[@alt='nopCommerce demo store']";
 	public static final String PAGE_TITLE = "//div[@class='page-title']/h1";
 	public static final String EMPTY_MESSAGE = "//div[@class='no-data']";
+	public static final String ADD_COMPARE_SUCCESS_MSG = "//p[string()='The product has been added to your product comparison']";
+	public static final String ADD_WISHLIST_SUCCESS_MSG = "//p[string()='The product has been added to your wishlist']";
+	public static final String ADD_TO_CART_SUCCESS_MSG = "//p[string()='The product has been added to your shopping cart']";
+	public static final String CLOSE_MSG_ICON = "//span[@title='Close']";
 	
 	public static final String URL_BY_PAGENAME = "//a[text()='%s']";
 	public static final String SIDEBAR_PAGE_BY_NAME = "//a[text()='%s']";

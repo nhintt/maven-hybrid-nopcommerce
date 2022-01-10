@@ -237,7 +237,7 @@ public class User_My_Account_Testcases extends BaseTest {
 		userChangePwdPage.clickToChangePwdButton();
 		
 		log.info("My_Account_03 - Step 05: Click to Close icon");
-		userChangePwdPage.clickToCloseMessageButton();
+		userChangePwdPage.clickToCloseMessageButton(null);
 		
 		log.info("My_Account_03 - Step 06: Click to Log out link");
 		userChangePwdPage.openPageByNamePage(driver, "Log out");

@@ -22,6 +22,9 @@ import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
 import pageObjects.nopCommerce.user.UserProductListPO;
 import pageUIs.nopCommerce.user.UserBasePageUI;
+import pageUIs.nopCommerce.user.UserChangePasswordPageUI;
+import pageUIs.nopCommerce.user.UserDashboardPageUI;
+import pageUIs.nopCommerce.user.UserProductDetailsPageUI;
 import pageUIs.nopCommerce.user.UserWishlistPageUI;
 
 public class BasePage {
@@ -259,6 +262,13 @@ public class BasePage {
 		}
 	}
 
+	public void uncheckToDefaultCheckbox(WebDriver driver, String xpathLocator, String... params) {
+		WebElement element = getWebElement(driver, getDynamicLocator(xpathLocator, params));
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+	
 	public void uncheckToDefaultCheckbox(WebDriver driver, String xpathLocator) {
 		WebElement element = getWebElement(driver, xpathLocator);
 		if (element.isSelected()) {
@@ -551,6 +561,26 @@ public class BasePage {
 	public String getEmptyMessage(WebDriver driver) {
 		waitForElementVisible(driver, UserBasePageUI.EMPTY_MESSAGE);
 		return getElementText(driver, UserBasePageUI.EMPTY_MESSAGE);
+	}
+	
+	public boolean isAddCompareSuccessMsgDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ADD_COMPARE_SUCCESS_MSG);
+		return isElementDisplayed(driver, UserBasePageUI.ADD_COMPARE_SUCCESS_MSG);
+	}
+
+	public boolean isAddWishlistSuccessMsgDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ADD_WISHLIST_SUCCESS_MSG);
+		return isElementDisplayed(driver, UserBasePageUI.ADD_WISHLIST_SUCCESS_MSG);
+	}
+	
+	public boolean isAddToCartSuccessMsgDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ADD_TO_CART_SUCCESS_MSG);
+		return isElementDisplayed(driver, UserBasePageUI.ADD_TO_CART_SUCCESS_MSG);
+	}
+
+	public void clickToCloseMessageButton(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.CLOSE_MSG_ICON);
+		clickToElement(driver, UserBasePageUI.CLOSE_MSG_ICON);
 	}
 	
 	private WebDriverWait explicitWait;

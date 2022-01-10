@@ -30,8 +30,8 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		emailAddress = data.getEmailAddress();
 		password = data.getPassword();
 		
-//		String envName = System.getProperty("envMaven");
-		ConfigFactory.setProperty("envOwner", "dev");
+		String envName = System.getProperty("envMaven");
+		ConfigFactory.setProperty("envOwner", envName);
 		environment = ConfigFactory.create(Environment.class);
 		
 		log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' with URL='" + environment.appUrl() + "'");
@@ -76,7 +76,7 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		userProductDetailsPage.clickToButtonByText(driver, "Add to wishlist");
 		
 		log.info("Wishlist_01 - Step 03: Verify success message displayed");
-		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed());
+		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed(driver));
 		
 		log.info("Wishlist_01 - Step 04: Open Wishlist page");
 		userProductDetailsPage.openPageByNamePage(driver, "wishlist");
@@ -105,7 +105,7 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		userProductDetailsPage.clickToButtonByText(driver, "Add to wishlist");
 		
 		log.info("Wishlist_02 - Step 03: Verify success message displayed");
-		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed());
+		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed(driver));
 		
 		log.info("Wishlist_02 - Step 04: Open Wishlist page");
 		userProductDetailsPage.openPageByNamePage(driver, "wishlist");
@@ -134,7 +134,7 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		userProductDetailsPage.clickToButtonByText(driver, "Add to wishlist");
 		
 		log.info("Wishlist_03 - Step 03: Verify success message displayed");
-		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed());
+		verifyTrue(userProductDetailsPage.isAddWishlistSuccessMsgDisplayed(driver));
 		
 		log.info("Wishlist_03 - Step 04: Open Wishlist page");
 		userProductDetailsPage.openPageByNamePage(driver, "wishlist");
@@ -173,14 +173,14 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		userDashboardPage.clickToButtonByProductNameAndBtnName("Build your own computer", "Add to compare list");
 		
 		log.info("Compare_04 - Step 01: Verify success message displayed");
-		verifyTrue(userDashboardPage.isAddCompareSuccessMsgDisplayed());
+		verifyTrue(userDashboardPage.isAddCompareSuccessMsgDisplayed(driver));
 		
 		log.info("Compare_04 - Step 01: Add product 'Apple MacBook Pro 13-inch' to compare list");
 		userDashboardPage.clickToButtonByProductNameAndBtnName("Apple MacBook Pro 13-inch", "Add to compare list");
 		userDashboardPage.sleepInSecond(2);
 		
 		log.info("Compare_04 - Step 01: Verify success message displayed");
-		verifyTrue(userDashboardPage.isAddCompareSuccessMsgDisplayed());
+		verifyTrue(userDashboardPage.isAddCompareSuccessMsgDisplayed(driver));
 		
 		log.info("Compare_04 - Step 01: Open Compare list page");
 		userDashboardPage.openPageByNamePage(driver, "product comparison");
@@ -232,7 +232,7 @@ public class User_Wishlist_Compare_Recent_View_Testcases extends BaseTest {
 		verifyEquals(userRecentlyViewedPage.getProductTitle("3"), "Samsung Series 9 NP900X4C Premium Ultrabook");
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		log.info("Post-Condition: Close browser");
 		closeBrowserAndDriver();

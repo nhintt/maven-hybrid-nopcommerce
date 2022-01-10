@@ -22,9 +22,4 @@ public class UserDashboardPO extends BasePage {
 		clickToElement(driver, UserDashboardPageUI.BUTTON_BY_PRONAME_AND_BTNNAME, productName, btnName);
 	}
 
-	public boolean isAddCompareSuccessMsgDisplayed() {
-		waitForElementVisible(driver, UserDashboardPageUI.ADD_COMPARE_SUCCESS_MSG);
-		return isElementDisplayed(driver, UserDashboardPageUI.ADD_COMPARE_SUCCESS_MSG);
-	}
-
 }

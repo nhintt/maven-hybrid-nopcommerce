@@ -17,8 +17,4 @@ public class UserChangePasswordPO extends BasePage{
 		clickToElement(driver, UserChangePasswordPageUI.CHANGE_PWD_BUTTON);
 	}
 
-	public void clickToCloseMessageButton() {
-		waitForElementClickable(driver, UserChangePasswordPageUI.CLOSE_MSG_ICON);
-		clickToElement(driver, UserChangePasswordPageUI.CLOSE_MSG_ICON);
-	}
 }
