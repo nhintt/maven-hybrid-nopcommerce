@@ -177,10 +177,10 @@ public class User_Order_Testcases extends BaseTest {
 		
 		log.info("Order_02 - Step - 2: Uncheck '" + software03 + "' in Software checkbox");
 		userProductDetailPage.unSelectProductAttrCheckbox(software03);
+		userProductDetailPage.sleepInSecond(3);
 		
 		log.info("Order_02 - Step - 2: Increase Quantity to 2");
 		userProductDetailPage.changeQuantityValue("2");
-		userProductDetailPage.sleepInSecond(3);
 		
 		log.info("Order_02 - Step - 2: Verify product price");
 		verifyEquals(userProductDetailPage.getProductPrice(), "$1,415.00");
@@ -443,6 +443,255 @@ public class User_Order_Testcases extends BaseTest {
 		
 		log.info("Order_04 - Step 01: Open order details");
 		userOrdersPage.clickToButtonByText(driver, "Details");
+	}
+	
+	@Test
+	public void Order_06_Checkout_By_Credit_Card() {
+		log.info("Order_04 - Step 01: Open Dashboard page");
+		userDashboardPage = userShoppingCartPage.openDashboardPageByLogoImg(driver);
+		
+		log.info("Order_04 - Step 01: Open Product 'Apple MacBook Pro 13-inch' details page");
+		userProductDetailPage = userDashboardPage.openProDetailByProName(driver, "Apple MacBook Pro 13-inch");
+		
+		log.info("Order_04 - Step 01: Add product to cart");
+		userProductDetailPage.clickToButtonByText(driver, "Add to cart");
+		
+		log.info("Order_04 - Step 01: Verify success message display");
+		userProductDetailPage.isAddToCartSuccessMsgDisplayed(driver);
+		
+		log.info("Order_04 - Step 01: Click to Close icon");
+		userProductDetailPage.clickToCloseMessageButton(driver);
+		
+		log.info("Order_04 - Step 01: Open Shopping Cart page");
+		userProductDetailPage.openPageByNamePage(driver, "Shopping cart");
+		userShoppingCartPage = PageGeneratorManager.getUserShoppingCartPage(driver);
+		
+		log.info("Order_04 - Step 01: Click to 'Estimate shipping' button");
+		userShoppingCartPage.clickToEstimateShippingButton();
+		
+		log.info("Order_04 - Step 01: Select 'Viet Nam' in Contry dropdown");
+		userShoppingCartPage.selectToItemInDropdownByID(driver, "CountryId", "Viet Nam");
+		
+		log.info("Order_04 - Step 01: Input to zipCode textbox with value '000'");
+		userShoppingCartPage.inputToTextboxByID(driver, "ZipPostalCode", "000");
+		
+		log.info("Order_04 - Step 01: Select Ground in Shipping method");
+		userShoppingCartPage.selectShippingMethod("Ground");
+		
+		log.info("Order_04 - Step 01: Click to Apply button");
+		userShoppingCartPage.clickToButtonByText(driver, "Apply");
+		
+		log.info("Order_04 - Step 01: Select to agreement of policy checkbox");
+		userShoppingCartPage.selectToAgreePolicyCheckbox();
+		
+		log.info("Order_04 - Step 01: Click to Checkout button");
+		userShoppingCartPage.clickToButtonByText(driver, " Checkout ");
+		userCheckoutPage = PageGeneratorManager.getUserCheckoutPage(driver);
+		
+		log.info("Order_04 - Step 01: Uncheck 'Ship to the same address checkbox'");
+		userCheckoutPage.uncheckToShipSameAddressCheckbox();
+		
+		log.info("Order_04 - Step 01: Select 'New address' in Shipping Adress");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "billing-address-select", "New Address");
+		
+		log.info("Order_04 - Step 01: Input to 'First name' textbox with value '" + billingFirstName + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_FirstName", billingFirstName);
+		
+		log.info("Order_04 - Step 01: Input to 'Last name' textbox with value '" + billingLastName + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_LastName", billingLastName);
+		
+		log.info("Order_04 - Step 01: Input to 'Email' textbox with value '" + billingEmail + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_Email", billingEmail);
+		
+		log.info("Order_04 - Step 01: Select Country dropdown with value '" + billingCountry + "'");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "BillingNewAddress_CountryId", billingCountry);
+		
+		log.info("Order_04 - Step 01: Input to 'City' textbox with value '" + billingCity + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_City", billingCity);
+		
+		log.info("Order_04 - Step 01: Input to 'Address 1' textbox with value '" + billingAddress + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_Address1", billingAddress);
+		
+		log.info("Order_04 - Step 01: Input to 'Zip / postal code' textbox with value '" + billingZipCode + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_ZipPostalCode", billingZipCode);
+		
+		log.info("Order_04 - Step 01: Input to 'Phone number' textbox with value '" + billingPhoneNumber + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "BillingNewAddress_PhoneNumber", billingPhoneNumber);
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToBillingContinueButton();
+		
+		log.info("Order_04 - Step 01: Select 'New address' in Shipping Adress");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "shipping-address-select", "New Address");
+		
+		log.info("Order_04 - Step 01: Input to 'First name' textbox with value '" + shippingFirstName + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_FirstName", shippingFirstName);
+		
+		log.info("Order_04 - Step 01: Input to 'Last name' textbox with value '" + shippingLastName + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_LastName", shippingLastName);
+		
+		log.info("Order_04 - Step 01: Input to 'Email' textbox with value '" + shippingEmail+ "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_Email", shippingEmail);
+		
+		log.info("Order_04 - Step 01: Select Country dropdown with value '" + shippingCountry+ "'");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "ShippingNewAddress_CountryId", shippingCountry);
+		
+		log.info("Order_04 - Step 01: Input to 'City' textbox with value '" + shippingCity+ "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_City", shippingCity);
+		
+		log.info("Order_04 - Step 01: Input to 'Address 1' textbox with value '" + shippingAddress + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_Address1", shippingAddress);
+		
+		log.info("Order_04 - Step 01: Input to 'Zip / postal code' textbox with value '" + shippingZipCode + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_ZipPostalCode", shippingZipCode);
+		
+		log.info("Order_04 - Step 01: Input to 'Phone number' textbox with value '" + shippingPhoneNumber + "'");
+		userCheckoutPage.inputToTextboxByID(driver, "ShippingNewAddress_PhoneNumber", shippingPhoneNumber);
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToShippingContinueButton();
+		
+		log.info("Order_04 - Step 01: Select 'Ground' in Shipping method");
+		userCheckoutPage.selectShippingMethod("Ground");
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToShippingMethodContinueButton();
+		
+		log.info("Order_04 - Step 01: Select 'Credit Card' in Payment method");
+		userCheckoutPage.selectPaymentMethod("Credit Card");
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToPaymentMethodContinueButton();
+		
+		log.info("Order_04 - Step 01: Select 'Master card' in Select credit card dropdown");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "CreditCardType", "Master card");
+		
+		log.info("Order_04 - Step 01: Input to Cardholder name textbox with value '" + registerFirstName + " " + registerLastName);
+		userCheckoutPage.inputToTextboxByID(driver, "CardholderName", registerFirstName + " " + registerLastName);
+		
+		log.info("Order_04 - Step 01: Input to Card number textbox with value '6011642131782099'");
+		userCheckoutPage.inputToTextboxByID(driver, "CardNumber", "6011642131782099");
+		
+		log.info("Order_04 - Step 01: Select '11' in Expired months dropdown");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "ExpireMonth", "11");
+		
+		log.info("Order_04 - Step 01: Select '2022' in Expired year dropdown");
+		userCheckoutPage.selectToItemInDropdownByID(driver, "ExpireYear", "2022");
+		
+		log.info("Order_04 - Step 01: Input to Card code textbox with value '0536'");
+		userCheckoutPage.inputToTextboxByID(driver, "CardCode", "0536");
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToPaymentInfoContinueButton();
+		
+		log.info("Order_04 - Step 01: Verify Billing address info");
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("name"), billingFirstName + " " + billingLastName);
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("email"), "Email: " + billingEmail);
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("phone"), "Phone: " + billingPhoneNumber);
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("fax"), "Fax:");
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("address1"), billingAddress);
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("city-state-zip"), billingCity + "," + billingZipCode);
+		verifyEquals(userCheckoutPage.getBillInfoByClassName("country"), billingCountry);
+		
+		log.info("Order_04 - Step 01: Verify Shipping address info");
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("name"), shippingFirstName + " " + shippingLastName);
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("email"), "Email: " + shippingEmail);
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("phone"), "Phone: " + shippingPhoneNumber);
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("fax"), "Fax:");
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("address1"), shippingAddress);
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("city-state-zip"), shippingCity + "," + shippingZipCode);
+		verifyEquals(userCheckoutPage.getShippingInfoByClassName("country"), shippingCountry);
+		
+		log.info("Order_04 - Step 01: Verify Payment method");
+		verifyEquals(userCheckoutPage.getPaymentMethod(), "Credit Card");
+		
+		log.info("Order_04 - Step 01: Verify Shipping method");
+		verifyEquals(userCheckoutPage.getShippingMethod(), "Ground");
+		
+		log.info("Order_04 - Step 01: Verify Product info");
+		verifyEquals(userCheckoutPage.getProductName(), "Apple MacBook Pro 13-inch");
+		verifyEquals(userCheckoutPage.getProductUnitPrice(), "$1,800.00");
+		verifyEquals(userCheckoutPage.getProductQuantity(), "2");
+		verifyEquals(userCheckoutPage.getProductTotalPrice(), "$3,600.00");
+		
+		log.info("Order_04 - Step 01: Verify Gift wrapping");
+		verifyEquals(userCheckoutPage.getGiftWrappingText(), "Gift wrapping: No");
+		
+		log.info("Order_04 - Step 01: Verify Total summary");
+		verifyEquals(userCheckoutPage.getTotalSummary(), "$3,600.00");
+		
+		log.info("Order_04 - Step 01: Click to Confirm button");
+		userCheckoutPage.clickToButtonByText(driver, "Confirm");
+		userCheckoutPage.acceptAlert(driver);
+		
+//		log.info("Order_04 - Step 01: Verify order successfull message");
+//		verifyTrue(userCheckoutPage.isOrderSuccessMessageDisplayed());
+//		
+//		log.info("Order_04 - Step 01: Verify order number displayed");
+//		verifyTrue(userCheckoutPage.isOrderNumberDisplayed());
+//		
+//		log.info("Order_04 - Step 01: Open My account page");
+//		userCheckoutPage.openPageByNamePage(driver, "My account");
+//		userCustomerPage = PageGeneratorManager.getUserCustomerInfoPage(driver);
+//		
+//		log.info("Order_04 - Step 01: Open Orders page");
+//		userCustomerPage.openSidebarPageByPageName(driver, "Orders");
+//		userOrdersPage = PageGeneratorManager.getOrdersPage(driver);
+//		
+//		log.info("Order_04 - Step 01: Open order details");
+//		userOrdersPage.clickToButtonByText(driver, "Details");
+	}
+	
+	@Test
+	public void Order_07_Reorder() {
+		log.info("Order_07 - Step 01: Open My account Page");
+		userCheckoutPage.openPageByNamePage(driver, "My account");
+		userCustomerPage = PageGeneratorManager.getUserCustomerInfoPage(driver);
+		
+		log.info("Order_07 - Step 01: Open Orders Page");
+		userCustomerPage.openSidebarPageByPageName(driver, "Orders");
+		userOrdersPage = PageGeneratorManager.getOrdersPage(driver);
+		
+		log.info("Order_07 - Step 01: Open Order details");
+		userOrdersPage.clickToButtonByText(driver, "Details");
+		
+		log.info("Order_07 - Step 01: Click to Re-order button");
+		userOrdersPage.clickToButtonByText(driver, "Re-order");
+		userShoppingCartPage = PageGeneratorManager.getUserShoppingCartPage(driver);
+		
+		log.info("Order_07 - Step 01: Change product quantity to '10'");
+		userShoppingCartPage.changeProductQuantity("10");
+		
+		log.info("Order_07 - Step 01: Select to Agreement of policy checkbox");
+		userShoppingCartPage.selectToAgreePolicyCheckbox();
+		
+		log.info("Order_07 - Step 01: Click to Checkout button");
+		userShoppingCartPage.clickToButtonByText(driver, " Checkout ");
+		userCheckoutPage = PageGeneratorManager.getUserCheckoutPage(driver);
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToBillingContinueButton();
+		
+		log.info("Order_04 - Step 01: Select 'Ground' in Shipping method");
+		userCheckoutPage.selectShippingMethod("Next Day Air");
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToShippingMethodContinueButton();
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToPaymentMethodContinueButton();
+		
+		log.info("Order_04 - Step 01: Click to Continue button");
+		userCheckoutPage.clickToPaymentInfoContinueButton();
+		
+		log.info("Order_04 - Step 01: Verify Shipping method");
+		verifyEquals(userCheckoutPage.getShippingMethod(), "Next Day Air");
+		
+		log.info("Order_04 - Step 01: Click to Confirm button");
+		userCheckoutPage.clickToButtonByText(driver, "Confirm");
+		
+		log.info("Order_04 - Step 01: Accept alert");
+		userCheckoutPage.acceptAlert(driver);
 	}
 	
 	@AfterClass(alwaysRun = true)
