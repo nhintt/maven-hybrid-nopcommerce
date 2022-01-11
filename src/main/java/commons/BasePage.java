@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
 import pageObjects.nopCommerce.user.UserProductListPO;
+import pageUIs.nopCommerce.admin.AdminBasePageUI;
 import pageUIs.nopCommerce.user.UserBasePageUI;
 import pageUIs.nopCommerce.user.UserChangePasswordPageUI;
 import pageUIs.nopCommerce.user.UserDashboardPageUI;
@@ -581,6 +582,16 @@ public class BasePage {
 	public void clickToCloseMessageButton(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CLOSE_MSG_ICON);
 		clickToElement(driver, UserBasePageUI.CLOSE_MSG_ICON);
+	}
+	
+	// ================ ADMIN =====================
+
+	public void openSideBarSubMenuAdmmin(WebDriver driver, String menuName, String subMenuName) {
+		waitForElementVisible(driver, AdminBasePageUI.MENU_LINK_BY_NAME, menuName);
+		clickToElement(driver, AdminBasePageUI.MENU_LINK_BY_NAME, menuName);
+		
+		waitForElementVisible(driver, AdminBasePageUI.SUBMENU_LINK_BY_NAME, subMenuName);
+		clickToElement(driver, AdminBasePageUI.SUBMENU_LINK_BY_NAME, subMenuName);
 	}
 	
 	private WebDriverWait explicitWait;

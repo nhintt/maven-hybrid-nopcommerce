@@ -7,6 +7,9 @@ import org.aeonbits.owner.Config.Sources;
 public interface Environment extends Config {
 	@Key("app.url")
 	String appUrl();
+	
+	@Key("app.adminUrl")
+	String appAdminUrl();
 
 	@Key("app.username")
 	String appUsername();

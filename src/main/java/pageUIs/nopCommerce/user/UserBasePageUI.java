@@ -16,5 +16,5 @@ public class UserBasePageUI {
 	public static final String FOOTER_PAGE_BY_NAME = "//div[@class='footer']//a[text()='%s']";
 	public static final String DROPDOWN_BY_ID = "//select[@id='%s']";
 	public static final String MENU_PAGE_BY_NAME = "//ul[@class='top-menu notmobile']//a[text()='%s ']";
-	public static final String BUTTON_BY_TEXT = "//button[text()='%s']";
+	public static final String BUTTON_BY_TEXT = "//button[contains(string(), '%s')]";
 }

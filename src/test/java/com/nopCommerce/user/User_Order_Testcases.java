@@ -439,7 +439,7 @@ public class User_Order_Testcases extends BaseTest {
 		
 		log.info("Order_04 - Step 01: Open Orders page");
 		userCustomerPage.openSidebarPageByPageName(driver, "Orders");
-		userOrdersPage = PageGeneratorManager.getOrdersPage(driver);
+		userOrdersPage = PageGeneratorManager.getUserOrdersPage(driver);
 		
 		log.info("Order_04 - Step 01: Open order details");
 		userOrdersPage.clickToButtonByText(driver, "Details");
@@ -650,7 +650,7 @@ public class User_Order_Testcases extends BaseTest {
 		
 		log.info("Order_07 - Step 01: Open Orders Page");
 		userCustomerPage.openSidebarPageByPageName(driver, "Orders");
-		userOrdersPage = PageGeneratorManager.getOrdersPage(driver);
+		userOrdersPage = PageGeneratorManager.getUserOrdersPage(driver);
 		
 		log.info("Order_07 - Step 01: Open Order details");
 		userOrdersPage.clickToButtonByText(driver, "Details");
