@@ -13,7 +13,7 @@
 		<parameter name="browser" value="chrome" />
 		
 		<classes>
-			<class name="com.nopCommerce.admin.Admin_Product_Testcases" />
+			<class name="com.nopCommerce.admin.Admin_Customers_Testcases" />
 		</classes>
 	</test>
 <!-- 

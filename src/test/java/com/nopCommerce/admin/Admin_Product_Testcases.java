@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import environmentConfig.Environment;
+import pageObjects.nopCommerce.admin.AdminDashboardPO;
 import pageObjects.nopCommerce.admin.AdminLoginPO;
 import pageObjects.nopCommerce.admin.AdminProductDetailPO;
 import pageObjects.nopCommerce.admin.AdminProductsPO;
@@ -34,7 +35,7 @@ public class Admin_Product_Testcases extends BaseTest {
 		adminLoginPage.inputToTextboxByID(driver, "Email", "admin@yourstore.com");
 		adminLoginPage.inputToTextboxByID(driver, "Password", "admin");
 		adminLoginPage.clickToButtonByText(driver, "Log in");
-		adminDashboardPage = PageGeneratorManager.getAdminLoginPage(driver);
+		adminDashboardPage = PageGeneratorManager.getAdminDashboardPage(driver);
 	}
 	
 	@BeforeMethod
@@ -56,7 +57,7 @@ public class Admin_Product_Testcases extends BaseTest {
 		verifyEquals(adminProductsPage.getProductSearchResult(), 1);
 		
 		log.info("Product_01 - Step 04: Verify product name");
-		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name"), productName);
+		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name", "products-grid"), productName);
 	}
 	
 	@Test
@@ -92,7 +93,7 @@ public class Admin_Product_Testcases extends BaseTest {
 		verifyEquals(adminProductsPage.getProductSearchResult(), 1);
 		
 		log.info("Products_03 - Step 06: Verify product name");
-		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name"), productName);
+		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name", "products-grid"), productName);
 	}
 	
 	@Test
@@ -110,22 +111,37 @@ public class Admin_Product_Testcases extends BaseTest {
 		verifyEquals(adminProductsPage.getProductSearchResult(), 1);
 		
 		log.info("Products_04 - Step 05: Verify product name");
-		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name"), productName);
+		verifyEquals(adminProductsPage.getCellValueByColumnNameAndRowIndex(driver, "1", "Product name", "products-grid"), productName);
 	}
 	
 	@Test
-	public void Products_05_Goto_Directly_To_Product_SKU() {
-		log.info("Products_04 - Step 01: Input to 'Go directly to product SKU' textbox with value 'LE_IC_600'");
+	public void Products_05_Search_With_Product_Name_Manufacturer() {
+		log.info("Products_05 - Step 01: Input to 'Product name' textbox with value '" + productName + "'");
+		adminProductsPage.inputToTextboxByID(driver, "SearchProductName", productName);
+		
+		log.info("Products_05 - Step 02: Select 'Apple' in Manufacturer dropdown");
+		adminProductsPage.selectToItemInDropdownByID(driver, "SearchManufacturerId", "Apple");
+		
+		log.info("Products_05 - Step 03: Click to 'Search' button");
+		adminProductsPage.clickToButtonByText(driver, "Search");
+		
+		log.info("Products_05 - Step 04: Verify empty message displayed");
+		verifyTrue(adminProductsPage.isEmptyMessageDisplayed());
+	}
+	
+	@Test
+	public void Products_06_Goto_Directly_To_Product_SKU() {
+		log.info("Products_06 - Step 01: Input to 'Go directly to product SKU' textbox with value 'LE_IC_600'");
 		adminProductsPage.inputToTextboxByID(driver, "GoDirectlyToSku", "LE_IC_600");
 		
-		log.info("Products_04 - Step 03: Click to 'Go' button");
+		log.info("Products_06 - Step 02: Click to 'Go' button");
 		adminProductsPage.clickToButtonByText(driver, "Go");
 		adminProductDetailPage = PageGeneratorManager.getAdminProductDetailPage(driver);
 		
-		log.info("Products_04 - Step 04: Verify open 'Product detail' successfully");
+		log.info("Products_06 - Step 03: Verify open 'Product detail' successfully");
 		verifyTrue(adminProductDetailPage.isPageNameDisplayed());
 		
-		log.info("Products_04 - Step 05: Verify product name");
+		log.info("Products_06 - Step 04: Verify product name");
 		verifyEquals(adminProductDetailPage.getProductName(), productName);
 	}
 	
@@ -139,7 +155,7 @@ public class Admin_Product_Testcases extends BaseTest {
 	private WebDriver driver;
 	
 	private AdminLoginPO adminLoginPage;
-	private AdminLoginPO adminDashboardPage;
+	private AdminDashboardPO adminDashboardPage;
 	private AdminProductsPO adminProductsPage;
 	private AdminProductDetailPO adminProductDetailPage;
 	private String productName;

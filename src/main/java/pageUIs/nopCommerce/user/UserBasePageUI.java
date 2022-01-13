@@ -9,7 +9,7 @@ public class UserBasePageUI {
 	public static final String ADD_TO_CART_SUCCESS_MSG = "//p[string()='The product has been added to your shopping cart']";
 	public static final String CLOSE_MSG_ICON = "//span[@title='Close']";
 	
-	public static final String URL_BY_PAGENAME = "//a[text()='%s']";
+	public static final String URL_BY_PAGENAME = "//a[contains(string(), '%s')]";
 	public static final String SIDEBAR_PAGE_BY_NAME = "//a[text()='%s']";
 	public static final String PRODUCT_LINK = "//div[@class='item-box']//h2[@class='product-title']/a[text()='%s']";
 	public static final String TEXTBOX_BY_ID = "//input[@id='%s']";

@@ -22,11 +22,8 @@ import pageObjects.nopCommerce.user.UserDashboardPO;
 import pageObjects.nopCommerce.user.UserProductDetailsPO;
 import pageObjects.nopCommerce.user.UserProductListPO;
 import pageUIs.nopCommerce.admin.AdminBasePageUI;
+import pageUIs.nopCommerce.admin.AdminProductsPageUI;
 import pageUIs.nopCommerce.user.UserBasePageUI;
-import pageUIs.nopCommerce.user.UserChangePasswordPageUI;
-import pageUIs.nopCommerce.user.UserDashboardPageUI;
-import pageUIs.nopCommerce.user.UserProductDetailsPageUI;
-import pageUIs.nopCommerce.user.UserWishlistPageUI;
 
 public class BasePage {
 
@@ -189,7 +186,6 @@ public class BasePage {
 
 	public void selectItemInDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem) {
 		getWebElement(driver, parentXpath).click();
-		sleepInSecond(1);
 
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childXpath)));
@@ -198,11 +194,36 @@ public class BasePage {
 			if (item.getText().trim().equals(expectedTextItem)) {
 				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 				jsExecutor.executeScript("arguments[0].scrollIntoView(true)", item);
-				sleepInSecond(1);
 				item.click();
 				break;
 			}
 		}
+	}
+	
+	public void selectItemInEditableDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem) {
+		getWebElement(driver, parentXpath).clear();
+		getWebElement(driver, parentXpath).sendKeys(expectedTextItem);
+		
+		if (getElementText(driver, childXpath).equals(expectedTextItem)) {
+			getWebElement(driver, childXpath).click();
+		}
+		
+//		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+//		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childXpath)));
+//		
+//		for (WebElement item : allItems) {
+//			if (item.getText().trim().equals(expectedTextItem)) {
+//				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+//				if (item.isDisplayed()) {
+//					item.click();
+//					break;
+//				} else {
+//					jsExecutor.executeScript("arguments[0].scrollIntoView(true)", item);
+//					item.click();
+//					break;
+//				}
+//			}
+//		}
 	}
 
 	public void sleepInSecond(long second) {
@@ -592,6 +613,31 @@ public class BasePage {
 		
 		waitForElementVisible(driver, AdminBasePageUI.SUBMENU_LINK_BY_NAME, subMenuName);
 		clickToElement(driver, AdminBasePageUI.SUBMENU_LINK_BY_NAME, subMenuName);
+	}
+
+	public String getAdminSuccessMessage(WebDriver driver) {
+		waitForElementVisible(driver, AdminBasePageUI.SUCCESS_MESSAGE);
+		return getElementText(driver, AdminBasePageUI.SUCCESS_MESSAGE);
+	}
+
+	public void clickToExpandPanelByName(WebDriver driver, String panelName) {
+		waitForElementClickable(driver, AdminBasePageUI.EXPAND_PANEL_ICON, panelName);
+		if (getElementText(driver, AdminBasePageUI.EXPAND_PANEL_ICON, panelName).contains("fa-plus")) {
+			waitForElementClickable(driver, AdminBasePageUI.EXPAND_PANEL_ICON, panelName);
+			clickToElement(driver, AdminBasePageUI.EXPAND_PANEL_ICON, panelName);
+		}
+	}
+
+	public String getValueTextboxByID(WebDriver driver, String textboxID) {
+		waitForElementVisible(driver, UserBasePageUI.TEXTBOX_BY_ID, textboxID);
+		return getElementAttribute(driver, UserBasePageUI.TEXTBOX_BY_ID, "value", textboxID);
+	}
+
+	public String getCellValueByColumnNameAndRowIndex(WebDriver driver, String rowIndex, String columnName, String tableID) {
+		waitForAllElementVisible(driver, AdminBasePageUI.PRECEDING_SIBLING_COLUMN_BY_NAME, columnName);
+		int columnIndex = getElementSize(driver, AdminBasePageUI.PRECEDING_SIBLING_COLUMN_BY_NAME, columnName) + 1;
+		waitForElementVisible(driver, AdminBasePageUI.CELL_VALUE_BY_ROW_INDEX_COLUMN_NAME, rowIndex, String.valueOf(columnIndex));
+		return getElementText(driver, AdminBasePageUI.CELL_VALUE_BY_ROW_INDEX_COLUMN_NAME, rowIndex, String.valueOf(columnIndex));
 	}
 	
 	private WebDriverWait explicitWait;

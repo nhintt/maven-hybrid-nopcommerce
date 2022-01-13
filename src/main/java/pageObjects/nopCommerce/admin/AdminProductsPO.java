@@ -18,13 +18,6 @@ public class AdminProductsPO extends BasePage {
 		return getElementSize(driver, AdminProductsPageUI.PRODUCT_ROWS);
 	}
 
-	public String getCellValueByColumnNameAndRowIndex(WebDriver driver, String rowIndex, String columnName) {
-		waitForAllElementVisible(driver, AdminProductsPageUI.PRECEDING_SIBLING_COLUMN_BY_NAME, columnName);
-		int columnIndex = getElementSize(driver, AdminProductsPageUI.PRECEDING_SIBLING_COLUMN_BY_NAME, columnName) + 1;
-		waitForElementVisible(driver, AdminProductsPageUI.CELL_VALUE_BY_ROW_INDEX_COLUMN_NAME, rowIndex, String.valueOf(columnIndex));
-		return getElementText(driver, AdminProductsPageUI.CELL_VALUE_BY_ROW_INDEX_COLUMN_NAME, rowIndex, String.valueOf(columnIndex));
-	}
-
 	public boolean isEmptyMessageDisplayed() {
 		waitForElementVisible(driver, AdminProductsPageUI.EMPTY_MESSAGE);
 		return isElementDisplayed(driver, AdminProductsPageUI.EMPTY_MESSAGE);
