@@ -204,20 +204,19 @@ public class BasePage {
 		getWebElement(driver, parentXpath).clear();
 		getWebElement(driver, parentXpath).sendKeys(expectedTextItem);
 		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childXpath)));
 		
 		for (WebElement item : allItems) {
 			if (item.getText().trim().equals(expectedTextItem)) {
-				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 				if (item.isDisplayed()) {
 					item.click();
-					break;
 				} else {
 					jsExecutor.executeScript("arguments[0].scrollIntoView(true)", item);
 					item.click();
-					break;
 				}
+				break;
 			}
 		}
 	}

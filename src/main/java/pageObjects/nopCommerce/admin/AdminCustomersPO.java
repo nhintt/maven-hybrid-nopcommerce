@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
+import commons.PageGeneratorManager;
 import pageUIs.nopCommerce.admin.AdminCustomersPageUI;
 
 public class AdminCustomersPO extends BasePage {
@@ -27,6 +28,17 @@ public class AdminCustomersPO extends BasePage {
 
 	public void selectItemInCustomerRoleDropdown(String expectedRole) {
 		waitForElementVisible(driver, AdminCustomersPageUI.LISTBOX_PARENT);
-		selectItemInDropdown(driver, AdminCustomersPageUI.LISTBOX_PARENT, AdminCustomersPageUI.LISTBOX_ITEM, expectedRole);
+		selectItemInEditableDropdown(driver, AdminCustomersPageUI.LISTBOX_PARENT, AdminCustomersPageUI.LISTBOX_ITEM, expectedRole);
+	}
+
+	public int getCustomerQuantitySearchResult() {
+		waitForElementVisible(driver, AdminCustomersPageUI.QUANTITY_CUSTOMER_SEARCH_RESULT);
+		return getElementSize(driver, AdminCustomersPageUI.QUANTITY_CUSTOMER_SEARCH_RESULT);
+	}
+
+	public AdminEditCustomerPO clickToEditButton(String emailAddress) {
+		waitForElementVisible(driver, AdminCustomersPageUI.EDIT_BUTTON_BY_EMAIL, emailAddress);
+		clickToElement(driver, AdminCustomersPageUI.EDIT_BUTTON_BY_EMAIL, emailAddress);;
+		return PageGeneratorManager.getAdminEditCustomerPage(driver);
 	}
 }

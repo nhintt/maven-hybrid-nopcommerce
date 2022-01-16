@@ -32,7 +32,7 @@ public class AdminAddNewCustomerPO extends BasePage {
 
 	public void selectItemInCustomerRoleDropdown(String expectedRole) {
 		waitForElementVisible(driver, AdminAddNewCustomerPageUI.LISTBOX_PARENT);
-		selectItemInEditableDropdown(driver, AdminAddNewCustomerPageUI.LISTBOX_PARENT, AdminAddNewCustomerPageUI.LISTBOX_ITEM, expectedRole);
+		selectItemInDropdown(driver, AdminAddNewCustomerPageUI.LISTBOX_PARENT, AdminAddNewCustomerPageUI.LISTBOX_ITEM, expectedRole);
 	}
 
 	public void inputToAdminComment(String adminComment) {

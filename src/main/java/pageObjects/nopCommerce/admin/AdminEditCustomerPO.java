@@ -3,6 +3,7 @@ package pageObjects.nopCommerce.admin;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageUIs.nopCommerce.admin.AdminAddNewCustomerPageUI;
 import pageUIs.nopCommerce.admin.AdminEditCustomerPageUI;
 
 public class AdminEditCustomerPO extends BasePage {
@@ -25,6 +26,11 @@ public class AdminEditCustomerPO extends BasePage {
 	public String getAdminComment() {
 		waitForElementVisible(driver, AdminEditCustomerPageUI.ADMIN_COMMENT_TEXTAREA);
 		return getElementText(driver, AdminEditCustomerPageUI.ADMIN_COMMENT_TEXTAREA);
+	}
+
+	public void inputToAdminComment(String adminComment) {
+		waitForElementVisible(driver, AdminEditCustomerPageUI.ADMIN_COMMENT_TEXTAREA);
+		sendkeyToElement(driver, AdminEditCustomerPageUI.ADMIN_COMMENT_TEXTAREA, adminComment);
 	}
 
 }

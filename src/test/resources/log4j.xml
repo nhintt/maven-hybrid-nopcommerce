@@ -35,7 +35,7 @@
 		</layout>
 	</appender>
 
-	<category name="com.nopCommerce.user">
+	<category name="com.nopCommerce.admin">
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />
